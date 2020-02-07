@@ -1,18 +1,9 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="info">
   <mat-toolbar-row>
-    <span>Sogo Services</span>
-  </mat-toolbar-row>
-
-  <mat-toolbar-row>
-    <span>View All</span>
-    <span class="example-spacer"></span>
+    <span>ViLog</span>
     <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
-  </mat-toolbar-row>
 
-  <mat-toolbar-row>
-    <span>Recently Added</span>
-    <span class="example-spacer"></span>
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+    <a mat-raised-button color="accent" routerLink="./view_all" class="pull-right">View All</a>
+    <a mat-raised-button color="accent" routerLink="./recently_added" class="pull-right">Recently Addded</a>
+    <a mat-raised-button color="accent" routerLink="./export_csv" ckass="pull-right">Export CSV</a>
   </mat-toolbar-row>
-</mat-toolbar>
