@@ -8,10 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { RecentlyAddedComponent } from './recently-added/recently-added.component';
+import {RouterModule, Routes} from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'recently-added', component: RecentlyAddedComponent }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RecentlyAddedComponent,
+    RecentlyAddedComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +28,8 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

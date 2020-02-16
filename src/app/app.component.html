@@ -1,9 +1,13 @@
 <mat-toolbar color="info">
   <mat-toolbar-row>
-    <span>ViLog</span>
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
-
-    <a mat-raised-button color="accent" routerLink="./view_all" class="pull-right">View All</a>
-    <a mat-raised-button color="accent" routerLink="./recently_added" class="pull-right">Recently Addded</a>
-    <a mat-raised-button color="accent" routerLink="./export_csv" ckass="pull-right">Export CSV</a>
+    <h2>Sogo Services | ViLog</h2>
+      <span class="toolbar-button"></span>
+      <a mat-raised-button color="accent" routerLink="/view-all">View All</a>
+      <a mat-raised-button color="accent" routerLink="/recently-added">Recently Added</a>
+      <a mat-raised-button color="accent" routerLink="/export-csv">Export CSV</a>
   </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+<!-- Routed components go here -->
+
