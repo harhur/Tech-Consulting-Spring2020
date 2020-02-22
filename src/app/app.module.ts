@@ -8,19 +8,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import {starredcomponent} from './starred/starred.component';
+import { starredcomponent } from './starred/starred.component';
 import {RouterModule, Routes} from '@angular/router';
 
 
 
 const routes: Routes = [
-  {path: 'starred', component: starredcomponent}
+  { path: 'starred', component: starredcomponent }
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    starredcomponent,
     starredcomponent
   ],
   imports: [
