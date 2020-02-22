@@ -15,16 +15,15 @@ export class ViewAllComponent implements OnInit {
     this.carArray = JSON.parse(this.jsonString);
     console.log(this.carArray[0].lastUpdated);
 
-    this.carArray.sort(function compare(a, b) {
-      var addedA = new Date(a.dateAdded);
-      var addedB = new Date(b.dateAdded);
-      return +addedA - +addedB;
-    });
+    this.carArray.sort((a,b) => a.vin - b.vin);
 
-    console.log(this.carArray[0].dateAdded);
+    console.log(this.carArray[0].vin);
   }
 
   ngOnInit() {
 
   }
+
+
+
 }
