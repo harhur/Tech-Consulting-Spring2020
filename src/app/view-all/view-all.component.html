@@ -1,7 +1,9 @@
-<h1>View All</h1>
+<h1>View All Cars</h1>
+
 
 <tr *ngFor="let car of carArray">
-  <td>{{car?.carId}}</td>
-  <td>{{car?.model}}</td>
-  <td>{{car?.dateAdded}}</td>
+    <td>{{car?.carId}}</td>
+    <td>{{car?.model}}</td>
+    <td>{{car?.dateAdded}}</td>
+    <td>{{car?.vin}}</td>
 </tr>
