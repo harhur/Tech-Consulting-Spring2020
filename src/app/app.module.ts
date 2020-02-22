@@ -10,16 +10,19 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { RecentlyAddedComponent } from './recently-added/recently-added.component';
 import {RouterModule, Routes} from '@angular/router';
+import { ViewAllComponent } from './view-all/view-all.component';
 
 const appRoutes: Routes = [
-  { path: 'recently-added', component: RecentlyAddedComponent }
+  { path: 'recently-added', component: RecentlyAddedComponent },
+  { path: 'view-all', component: ViewAllComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     RecentlyAddedComponent,
-    RecentlyAddedComponent
+    RecentlyAddedComponent,
+    ViewAllComponent
   ],
   imports: [
     BrowserModule,
