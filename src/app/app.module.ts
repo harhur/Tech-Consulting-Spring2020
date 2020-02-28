@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { RecentlyAddedComponent } from './recently-added/recently-added.component';
 import {RouterModule, Routes} from '@angular/router';
 import { ViewAllComponent } from './view-all/view-all.component';
+import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
@@ -32,6 +33,9 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

@@ -1,5 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import dummyData from '../../assets/dummyData.json';
+import {MatTableDataSource} from '@angular/material';
+
+export interface Car {
+  carId: number;
+  dateAdded: string;
+  color: string;
+  price: number;
+  vin: number;
+  lastUpdated: string;
+  year: number;
+  model: string;
+  make: string;
+  plantId: number;
+  starred: boolean;
+}
 
 @Component({
   selector: 'app-recently-added',
@@ -9,11 +24,15 @@ import dummyData from '../../assets/dummyData.json';
 
 export class RecentlyAddedComponent implements OnInit {
   jsonString: any;
-  carArray: any;
+  carArray: Car[];
+  displayedColumns: string[] = ['carId', 'model', 'dateAdded'];
+  dataSource: any;
+
   constructor() {
     this.jsonString = JSON.stringify(dummyData);
     this.carArray = JSON.parse(this.jsonString);
-    console.log(this.carArray[0].lastUpdated);
+
+    console.log(this.carArray[0])
 
     this.carArray.sort(function compare(a, b) {
       var addedA = new Date(a.dateAdded);
@@ -21,11 +40,14 @@ export class RecentlyAddedComponent implements OnInit {
       return +addedA - +addedB;
     });
 
-    console.log(this.carArray[0].dateAdded);
+    this.dataSource = new MatTableDataSource(this.carArray);
   }
 
-  ngOnInit() {
+  ngOnInit() {}
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
 
