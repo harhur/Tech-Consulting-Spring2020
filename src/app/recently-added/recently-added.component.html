@@ -1,8 +1,8 @@
 <h1>Recently Added Cars</h1>
 
-<mat-form-field appearance="fill" color="primary" floatLabel="never">
-    <h3>Filter</h3>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Tesla">
+<h3>Filter</h3>
+<mat-form-field appearance="fill" color="primary">
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex: Tesla">
 </mat-form-field>
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -24,17 +24,5 @@
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="getRecord(row)"></tr>
 </table>
-
-<!--<ul>-->
-<!--    <li *ngFor="let car of carArray">-->
-<!--        {{car.carId}} View More-->
-<!--    </li>-->
-<!--</ul>-->
-
-<!--<tr *ngFor="let car of carArray">-->
-<!--    <td>{{car?.carId}}</td>-->
-<!--    <td>{{car?.model}}</td>-->
-<!--    <td>{{car?.dateAdded}}</td>-->
-<!--</tr>-->
