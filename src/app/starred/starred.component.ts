@@ -7,18 +7,20 @@ import dummyData from '../../assets/dummyData.json';
   styleUrls: ['./starred.component.css']
 })
 
-export class starredcomponent implements OnInit {
+export class StarredComponent implements OnInit {
   jsonString: any;
   starredArray: any;
+
   constructor() {
-    /**
-    *this.jsonString = JSON.stringify(dummyData);
-        this.starredArray = JSON.parse(this.jsonString);
-    */
+    this.jsonString = JSON.stringify(dummyData);
+    this.starredArray = JSON.parse(this.jsonString);
 
-    console.log(this.starredArray[0].starred);
+    this.starredArray = this.starredArray.filter(function(arr) {
+          return arr.starred;
+      });
 
-  
+      console.log(this.starredArray);
+
   }
 
   ngOnInit() {

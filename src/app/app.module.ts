@@ -8,21 +8,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import { starredcomponent } from './starred/starred.component';
+import { RecentlyAddedComponent } from './recently-added/recently-added.component';
 import {RouterModule, Routes} from '@angular/router';
+import { ViewAllComponent } from './view-all/view-all.component';
+import { StarredComponent } from './starred/starred.component';
 
-
-
-const routes: Routes = [
-  { path: 'starred', component: starredcomponent }
+const appRoutes: Routes = [
+  { path: 'recently-added', component: RecentlyAddedComponent },
+  { path: 'view-all', component: ViewAllComponent },
+  { path: 'starred', component: StarredComponent }
 ];
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    starredcomponent,
-    starredcomponent
+    RecentlyAddedComponent,
+    StarredComponent,
+    ViewAllComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,7 @@ const routes: Routes = [
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,7 @@
-<h1>Starred</h1>
+<h1>Starred Cars</h1>
+
+<tr *ngFor="let star of starredArray">
+    <td>{{star?.carId}}</td>
+    <td>{{star?.model}}</td>
+    <td>{{star?.starred}}</td>
+</tr>

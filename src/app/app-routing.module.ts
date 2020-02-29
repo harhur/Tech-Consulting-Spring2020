@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
-import {starredcomponent} from './starred/starred.component';
 import { Routes, RouterModule } from '@angular/router';
 
+import {RecentlyAddedComponent} from './recently-added/recently-added.component';
+import {StarredComponent} from './starred/starred.component';
+import {ViewAllComponent} from './view-all/view-all.component';
 
-export const routes: Routes = [
-  { path: 'starred', component: starredcomponent }
+export const appRoutes: Routes = [
+  { path: 'recently-added', component: RecentlyAddedComponent },
+  { path: 'view-all', component: ViewAllComponent },
+  { path: 'starred', component: StarredComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
