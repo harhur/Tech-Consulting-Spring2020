@@ -16,7 +16,8 @@ import { CarComponent } from './car/car.component';
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
-  { path: 'view-all', component: ViewAllComponent }
+  { path: 'view-all', component: ViewAllComponent },
+  { path: 'car', component: CarComponent }
 ];
 
 @NgModule({
