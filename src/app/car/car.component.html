@@ -682,21 +682,16 @@
 
 <body ng-app="CarList">
   <div ng-controller="CarController">
-    <div class="search">
       <select ng-model="searchFilter" class="search-type-selector">
        <option value="plantId" selected>Plant ID</option>
        <option value="carId">Car ID</option>
        <option value="vin">VIN</option>
       </select>
-      <div class="searchBar">
-          <input type="search" ng-model="searchText" placeholder="Enter search term"/>
-      </div>
+          <input class="searchBar" type="search" ng-model="searchText" placeholder="Enter search term"/>
     </div>
     <div class="block_line_item carlist_expanded" ng-repeat="car in cars | filter: filterCars(searchText, searchFilter)">
             {{car}}
     </div>
-
-  </div>
 </body>
 
 </html>

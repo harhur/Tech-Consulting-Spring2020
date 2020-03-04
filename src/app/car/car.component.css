@@ -1,0 +1,24 @@
+.search-type-selector {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  height: 35px;
+  width: auto;
+  display: inline-block;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #B0BFC6;
+  font-weight: 550;
+
+}
+::placeholder {
+  color: #5D5B55;
+  text-align: center;
+}
+
+.searchBar {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  height: 35px;
+  width: auto;
+  background-color: #B0BFC6;
+  outline: none;
+}
