@@ -1,7 +1,9 @@
 <mat-toolbar color="info">
   <mat-toolbar-row>
-    <h2>Sogo Services | ViLog</h2>
+    <a href="#"><h2>Sogo Services | ViLog</h2></a>
       <span class="toolbar-button"></span>
+      <app-car-search></app-car-search>
+      <a mat-raised-button color="accent" routerLink="/search-results">Search Results</a>
       <a mat-raised-button color="accent" routerLink="/view-all">View All</a>
       <a mat-raised-button color="accent" routerLink="/recently-added">Recently Added</a>
       <a mat-raised-button color="accent" routerLink="/export-csv">Export CSV</a>
@@ -10,4 +12,3 @@
 
 <router-outlet></router-outlet>
 <!-- Routed components go here -->
-
