@@ -12,13 +12,12 @@ import { RecentlyAddedComponent } from './recently-added/recently-added.componen
 import {RouterModule, Routes} from '@angular/router';
 import { ViewAllComponent } from './view-all/view-all.component';
 import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/material';
-import { SearchResultsComponent } from './search-results/search-results.component'
-import { CarSearchComponent } from './car-search/car-search.component'
+import { CarComponent } from './car/car.component';
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
   { path: 'view-all', component: ViewAllComponent },
-  { path: 'search-results', component: SearchResultsComponent }
+  { path: 'car', component: CarComponent }
 ];
 
 @NgModule({
@@ -28,7 +27,7 @@ const appRoutes: Routes = [
     RecentlyAddedComponent,
     ViewAllComponent,
     SearchResultsComponent,
-    CarSearchComponent
+    CarComponent
   ],
   imports: [
     BrowserModule,

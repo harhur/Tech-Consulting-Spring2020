@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import dummyData from '../../assets/dummyData.json';
 import {MatTableDataSource} from '@angular/material';
+import {Router} from '@angular/router';
 
 export interface Car {
   carId: number;
@@ -28,11 +29,9 @@ export class RecentlyAddedComponent implements OnInit {
   displayedColumns: string[] = ['carId', 'model', 'dateAdded'];
   dataSource: any;
 
-  constructor() {
+  constructor(private router: Router) {
     this.jsonString = JSON.stringify(dummyData);
     this.carArray = JSON.parse(this.jsonString);
-
-    console.log(this.carArray[0])
 
     this.carArray.sort(function compare(a, b) {
       var addedA = new Date(a.dateAdded);
@@ -50,6 +49,11 @@ export class RecentlyAddedComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
+  getRecord(row) {
+    console.log(row.carId);
+    console.log(this.router.url);
+    this.router.navigate([this.router.url]);
+  }
 
 
 }
