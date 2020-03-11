@@ -1,5 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import dummyData from '../../assets/dummyData.json';
+import {Car} from '../recently-added/recently-added.component';
+import {MatTableDataSource} from '@angular/material';
+import {Router} from '@angular/router';
+
+export interface Car {
+  carId: number;
+  dateAdded: string;
+  color: string;
+  price: number;
+  vin: number;
+  lastUpdated: string;
+  year: number;
+  model: string;
+  make: string;
+  plantId: number;
+  starred: boolean;
+}
 
 @Component({
   selector: 'app-view-all',
@@ -9,21 +26,29 @@ import dummyData from '../../assets/dummyData.json';
 
 export class ViewAllComponent implements OnInit {
   jsonString: any;
-  carArray: any;
-  constructor() {
+  carArray: Car[];
+  displayedColumns: string[] = ['carId', 'model', 'dateAdded'];
+  dataSource: any;
+
+  constructor(private router: Router) {
     this.jsonString = JSON.stringify(dummyData);
     this.carArray = JSON.parse(this.jsonString);
-    console.log(this.carArray[0].lastUpdated);
 
-    this.carArray.sort((a,b) => a.vin - b.vin);
+    this.carArray.sort((a, b) => a.carId - b.carId);
 
-    console.log(this.carArray[0].vin);
+    this.dataSource = new MatTableDataSource(this.carArray);
   }
 
   ngOnInit() {
 
   }
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 
-
+  getRecord(row) {
+    this.router.navigate(['./car'],  {queryParams: {id: row.carId}});
+  }
 }

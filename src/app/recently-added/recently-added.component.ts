@@ -52,7 +52,7 @@ export class RecentlyAddedComponent implements OnInit {
   getRecord(row) {
     console.log(row.carId);
     console.log(this.router.url);
-    this.router.navigate([this.router.url]);
+    this.router.navigate(['./car'],  {queryParams: {id: row.carId}});
   }
 
 

@@ -2,12 +2,17 @@
   <mat-toolbar-row>
     <h2>Sogo Services | ViLog</h2>
       <span class="toolbar-button"></span>
-      <a mat-raised-button color="accent" routerLink="/view-all">View All</a>
-      <a mat-raised-button color="accent" routerLink="/recently-added">Recently Added</a>
-      <a mat-raised-button color="accent" routerLink="/export-csv">Export CSV</a>
+      <a mat-raised-button color="accent" style="margin-right: 40px" routerLink="/view-all">
+        <mat-icon aria-hidden="false" aria-label="search icon">search</mat-icon>
+        View & Search</a>
+      <a mat-raised-button color="accent" style="margin-right: 40px" routerLink="/recently-added">
+        <mat-icon aria-hidden="false" aria-label="recently added icon">new_releases</mat-icon>
+        Recently Added</a>
+
+      <a mat-raised-button color="accent" style="margin-right: 10px; width: 140px" routerLink="/starred">
+        <mat-icon aria-hidden="false" aria-label="recently added icon">star_outline</mat-icon>
+        Starred</a>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
-<!-- Routed components go here -->
-
