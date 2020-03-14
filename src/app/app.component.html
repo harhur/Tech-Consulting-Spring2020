@@ -1,15 +1,15 @@
-<mat-toolbar color="info">
+<mat-toolbar [color]="'success'">
   <mat-toolbar-row>
     <h2>Sogo Services | ViLog</h2>
       <span class="toolbar-button"></span>
-      <a mat-raised-button color="accent" style="margin-right: 40px" routerLink="/view-all">
+      <a mat-raised-button [color]="'successbutton'" style="margin-right: 40px" routerLink="/view-all">
         <mat-icon aria-hidden="false" aria-label="search icon">search</mat-icon>
         View & Search</a>
-      <a mat-raised-button color="accent" style="margin-right: 40px" routerLink="/recently-added">
+      <a mat-raised-button [color]="'successbutton'" style="margin-right: 40px" routerLink="/recently-added">
         <mat-icon aria-hidden="false" aria-label="recently added icon">new_releases</mat-icon>
         Recently Added</a>
 
-      <a mat-raised-button color="accent" style="margin-right: 10px; width: 140px" routerLink="/starred">
+      <a mat-raised-button [color]="'successbutton'" style="margin-right: 10px; width: 140px" routerLink="/starred">
         <mat-icon aria-hidden="false" aria-label="recently added icon">star_outline</mat-icon>
         Starred</a>
   </mat-toolbar-row>
