@@ -17,7 +17,7 @@ export class CarComponent implements OnInit {
       this.id = +params['id'];
     });
     this.getCar(this.id);
-    console.log(this.car);
+    // TODO: Use table to show Car attributes
   }
 
   ngOnInit() {
