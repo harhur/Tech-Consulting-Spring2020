@@ -11,12 +11,15 @@ import {MatButtonModule} from '@angular/material/button';
 import { RecentlyAddedComponent } from './recently-added/recently-added.component';
 import {RouterModule, Routes} from '@angular/router';
 import { ViewAllComponent } from './view-all/view-all.component';
+import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import { CarComponent } from './car/car.component';
 import { StarredComponent } from './starred/starred.component';
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
   { path: 'view-all', component: ViewAllComponent },
   { path: 'starred', component: StarredComponent }
+  { path: 'car', component: CarComponent }
 ];
 
 @NgModule({
@@ -25,6 +28,9 @@ const appRoutes: Routes = [
     RecentlyAddedComponent,
     StarredComponent,
     ViewAllComponent
+    RecentlyAddedComponent,
+    ViewAllComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,9 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
