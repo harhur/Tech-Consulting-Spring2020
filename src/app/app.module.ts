@@ -18,7 +18,7 @@ import { StarredComponent } from './starred/starred.component';
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
   { path: 'view-all', component: ViewAllComponent },
-  { path: 'starred', component: StarredComponent }
+  { path: 'starred', component: StarredComponent },
   { path: 'car', component: CarComponent }
 ];
 
@@ -27,7 +27,7 @@ const appRoutes: Routes = [
     AppComponent,
     RecentlyAddedComponent,
     StarredComponent,
-    ViewAllComponent
+    ViewAllComponent,
     RecentlyAddedComponent,
     ViewAllComponent,
     CarComponent
