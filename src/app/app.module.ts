@@ -13,6 +13,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { ViewAllComponent } from './view-all/view-all.component';
 import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import { CarComponent } from './car/car.component';
+import {AnalyticsComponent} from './analytics/analytics.component';
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     RecentlyAddedComponent,
     RecentlyAddedComponent,
     ViewAllComponent,
-    CarComponent
+    CarComponent,
+    AnalyticsComponent
   ],
   imports: [
     BrowserModule,
