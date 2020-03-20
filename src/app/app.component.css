@@ -20,3 +20,8 @@ table {
 .mat-row:hover {
     background-color: cornflowerblue;
 }
+
+.map {
+    width: 75%;
+    height: 90%;
+}
