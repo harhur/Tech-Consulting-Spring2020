@@ -8,8 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import { RecentlyAddedComponent } from './recently-added/recently-added.component';
+import {StarredComponent} from './starred/starred.component';
 import {RouterModule, Routes} from '@angular/router';
+
+import { RecentlyAddedComponent } from './recently-added/recently-added.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import { CarComponent } from './car/car.component';
@@ -17,7 +19,8 @@ import { CarComponent } from './car/car.component';
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
   { path: 'view-all', component: ViewAllComponent },
-  { path: 'car', component: CarComponent }
+  { path: 'car', component: CarComponent },
+  {path: 'starred', component: StarredComponent}
 ];
 
 @NgModule({
@@ -26,7 +29,8 @@ const appRoutes: Routes = [
     RecentlyAddedComponent,
     RecentlyAddedComponent,
     ViewAllComponent,
-    CarComponent
+    CarComponent,
+    StarredComponent
   ],
   imports: [
     BrowserModule,
