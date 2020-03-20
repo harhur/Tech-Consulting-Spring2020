@@ -32,7 +32,8 @@ const appRoutes: Routes = [
     RecentlyAddedComponent,
     ViewAllComponent,
     CarComponent,
-    StarredComponent
+    StarredComponent,
+    AnalyticsComponent
   ],
   imports: [
     BrowserModule,
