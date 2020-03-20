@@ -2,23 +2,9 @@
     flex: 1 1 auto;
 }
 
-table {
-    width: 80%;
-}
-
-.mat-form-field {
-    font-size: 14px;
-    width: 80%;
-}
-
-.mat-input-element::placeholder{
-    color: cornflowerblue;
-    font-size: medium;
-    font-weight: bold;
-}
-
-.mat-row:hover {
-    background-color: cornflowerblue;
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .map {
