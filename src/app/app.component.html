@@ -2,6 +2,7 @@
   <mat-toolbar-row>
     <h2>Sogo Services | ViLog</h2>
       <span class="toolbar-button"></span>
+    
       <a mat-raised-button [color]="'successbutton'" style="margin-right: 40px" routerLink="/view-all">
         <mat-icon aria-hidden="false" aria-label="search icon">search</mat-icon>
         View & Search</a>
@@ -15,4 +16,7 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
+<app-analytics></app-analytics>
+
 <router-outlet></router-outlet>
+<!-- Routed components go here -->
