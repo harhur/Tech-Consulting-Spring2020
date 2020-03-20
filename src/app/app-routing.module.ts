@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
-import {RecentlyAddedComponent} from './recently-added/recently-added.component';
-import {ViewAllComponent} from './view-all/view-all.component';
-import { StarredComponent } from './starred/starred.component';
 import { Routes, RouterModule } from '@angular/router';
 import {CarComponent} from './car/car.component';
+import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+
+import {RecentlyAddedComponent} from './recently-added/recently-added.component';
+import {StarredComponent} from './starred/starred.component';
+import {ViewAllComponent} from './view-all/view-all.component';
 
 export const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
