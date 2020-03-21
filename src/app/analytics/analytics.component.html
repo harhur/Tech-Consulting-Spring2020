@@ -1,0 +1,15 @@
+<h1> Analytics </h1>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="totalCars">
+    <th mat-header-cell *matHeaderCellDef> Total Cars </th>
+    <td mat-cell *matCellDef="let element"> {{element.totalCars}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="carsAddedMonth">
+      <th mat-header-cell *matHeaderCellDef> Added Last Month </th>
+      <td mat-cell *matCellDef="let element"> {{element.carsAddedMonth}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
