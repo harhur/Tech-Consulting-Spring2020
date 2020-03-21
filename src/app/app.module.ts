@@ -14,9 +14,8 @@ import { RecentlyAddedComponent } from './recently-added/recently-added.componen
 import { ViewAllComponent } from './view-all/view-all.component';
 import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import { CarComponent } from './car/car.component';
-import {AnalyticsComponent} from './analytics/analytics.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
 import { StarredComponent } from './starred/starred.component';
-import { SearchResultsComponent } from './search-results/search-results.component';
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
@@ -35,7 +34,6 @@ const appRoutes: Routes = [
     CarComponent,
     StarredComponent,
     AnalyticsComponent,
-    SearchResultsComponent
   ],
   imports: [
     BrowserModule,
