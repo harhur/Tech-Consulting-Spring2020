@@ -13,6 +13,17 @@ export class AnalyticsComponent implements OnInit {
 
     ngOnInit() {}
 
-    // PUT ANALYTICS METHODS INSIDE HERE
+
+priceAverage() {
+  var total = 0;
+  var len = 0;
+  dummyData.forEach((car) => {
+    total = car.price + total;
+    len++;
+  });
+  return total/len;
+}
+
+
 
 }
