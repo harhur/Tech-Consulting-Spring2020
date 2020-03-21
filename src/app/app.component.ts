@@ -61,28 +61,29 @@ export class AppComponent {
     this.generateCoordinates();
   }
 
-  // Generate random coordinates for OpenStreetMaps
+  // Generate random coordinates for OpenStreetMaps from the pre-existing JSON data
   generateCoordinates() {
     dummyData.forEach(element => {
-      // let longitude = (Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4);
-      // let longitude = (Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4);
-      //
-      // let car = {
-      //   carId: element.carId,
-      //   dateAdded: element.dateAdded,
-      //   color: element.color,
-      //   price: element.price,
-      //   vin: element.vin,
-      //   lastUpdated: element.lastUpdated,
-      //   year: element.year,
-      //   model: element.model,
-      //   make: element.make,
-      //   plantId: element.plantId,
-      //   starred: element.starred,
-      //   latitude: this.latitude,
-      //   longitude: this.longitude
-      // }
-      // this.latLong.push(car);
+      let latitude = (Math.random() * (31.7719 - 35.6012) + 35.6012).toFixed(4);
+      let longitude = (Math.random() * (35.2170 - 38.5432) + 38.5432).toFixed(4);
+
+      let car = {
+        carId: element.carId,
+        dateAdded: element.dateAdded,
+        color: element.color,
+        price: element.price,
+        vin: element.vin,
+        lastUpdated: element.lastUpdated,
+        year: element.year,
+        model: element.model,
+        make: element.make,
+        plantId: element.plantId,
+        starred: element.starred,
+        latitude: +latitude,
+        longitude: +longitude
+      }
+
+      this.latLong.push(car);
     });
     console.log(this.latLong);
   }
