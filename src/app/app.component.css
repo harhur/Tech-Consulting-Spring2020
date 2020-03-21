@@ -3,7 +3,9 @@
 }
 
 table {
-    width: 80%;
+    margin-right: 0;
+    margin-left: auto;
+    width: 50%;
 }
 
 .mat-form-field {
