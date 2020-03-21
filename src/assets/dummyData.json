@@ -1,7 +1,7 @@
 [
     {
-        "dateAdded": "2018-1-22",
         "carId": 0,
+        "dateAdded": "2018-1-22",
         "color": "green",
         "price": 53300,
         "vin": 500473911531,
@@ -10,11 +10,13 @@
         "model": "Mustang",
         "make": "Ford",
         "plantId": 1,
-        "starred": true
+        "starred": true,
+        "latitude": 32.4442,
+        "longitude": 35.2501
     },
     {
-        "dateAdded": "2016-6-22",
         "carId": 1,
+        "dateAdded": "2016-6-22",
         "color": "pink",
         "price": 19416,
         "vin": 504096604206,
@@ -23,11 +25,13 @@
         "model": "Grand Cherokee",
         "make": "Cadillac",
         "plantId": 5,
-        "starred": false
+        "starred": false,
+        "latitude": 34.2332,
+        "longitude": 35.6008
     },
     {
-        "dateAdded": "2018-7-25",
         "carId": 2,
+        "dateAdded": "2018-7-25",
         "color": "purple",
         "price": 50149,
         "vin": 1221647654720,
@@ -36,11 +40,13 @@
         "model": "Mustang",
         "make": "Tesla",
         "plantId": 5,
-        "starred": false
+        "starred": false,
+        "latitude": 35.3603,
+        "longitude": 36.1689
     },
     {
-        "dateAdded": "2017-2-28",
         "carId": 3,
+        "dateAdded": "2017-2-28",
         "color": "purple",
         "price": 17044,
         "vin": 1573779961447,
@@ -49,11 +55,13 @@
         "model": "Mustang",
         "make": "Jeep",
         "plantId": 14,
-        "starred": true
+        "starred": true,
+        "latitude": 33.335,
+        "longitude": 35.9415
     },
     {
-        "dateAdded": "2018-1-10",
         "carId": 4,
+        "dateAdded": "2018-1-10",
         "color": "black",
         "price": 75277,
         "vin": 465881630666,
@@ -62,11 +70,13 @@
         "model": "Encore",
         "make": "Cadillac",
         "plantId": 1,
-        "starred": false
+        "starred": false,
+        "latitude": 34.1951,
+        "longitude": 35.2336
     },
     {
-        "dateAdded": "2017-3-18",
         "carId": 5,
+        "dateAdded": "2017-3-18",
         "color": "silver",
         "price": 4697,
         "vin": 1522478144532,
@@ -75,11 +85,13 @@
         "model": "Model 3",
         "make": "Buick",
         "plantId": 11,
-        "starred": true
+        "starred": true,
+        "latitude": 34.7889,
+        "longitude": 37.4065
     },
     {
-        "dateAdded": "2016-8-8",
         "carId": 6,
+        "dateAdded": "2016-8-8",
         "color": "red",
         "price": 16486,
         "vin": 198097610569,
@@ -88,11 +100,13 @@
         "model": "Grand Cherokee",
         "make": "Ford",
         "plantId": 14,
-        "starred": false
+        "starred": false,
+        "latitude": 34.0468,
+        "longitude": 36.4077
     },
     {
-        "dateAdded": "2016-1-29",
         "carId": 7,
+        "dateAdded": "2016-1-29",
         "color": "brown",
         "price": 73590,
         "vin": 345455106537,
@@ -101,11 +115,13 @@
         "model": "Encore",
         "make": "Buick",
         "plantId": 2,
-        "starred": false
+        "starred": false,
+        "latitude": 33.805,
+        "longitude": 36.1382
     },
     {
-        "dateAdded": "2018-10-25",
         "carId": 8,
+        "dateAdded": "2018-10-25",
         "color": "red",
         "price": 50471,
         "vin": 888303741331,
@@ -114,11 +130,13 @@
         "model": "Enclave",
         "make": "Jeep",
         "plantId": 9,
-        "starred": false
+        "starred": false,
+        "latitude": 34.7852,
+        "longitude": 37.1202
     },
     {
-        "dateAdded": "2018-3-12",
         "carId": 9,
+        "dateAdded": "2018-3-12",
         "color": "brown",
         "price": 13425,
         "vin": 1393584259720,
@@ -127,11 +145,13 @@
         "model": "Model X",
         "make": "Ford",
         "plantId": 1,
-        "starred": true
+        "starred": true,
+        "latitude": 33.3951,
+        "longitude": 36.225
     },
     {
-        "dateAdded": "2016-6-4",
         "carId": 10,
+        "dateAdded": "2016-6-4",
         "color": "black",
         "price": 79886,
         "vin": 1142228857046,
@@ -140,11 +160,13 @@
         "model": "Wrangler",
         "make": "Cadillac",
         "plantId": 15,
-        "starred": true
+        "starred": true,
+        "latitude": 34.2878,
+        "longitude": 36.3266
     },
     {
-        "dateAdded": "2018-2-29",
         "carId": 11,
+        "dateAdded": "2018-2-29",
         "color": "pink",
         "price": 85035,
         "vin": 1358544223506,
@@ -153,11 +175,13 @@
         "model": "Encore",
         "make": "Tesla",
         "plantId": 3,
-        "starred": true
+        "starred": true,
+        "latitude": 35.4278,
+        "longitude": 35.7106
     },
     {
-        "dateAdded": "2019-8-15",
         "carId": 12,
+        "dateAdded": "2019-8-15",
         "color": "green",
         "price": 98555,
         "vin": 621419093548,
@@ -166,11 +190,13 @@
         "model": "Grand Cherokee",
         "make": "Buick",
         "plantId": 4,
-        "starred": true
+        "starred": true,
+        "latitude": 34.8371,
+        "longitude": 35.7863
     },
     {
-        "dateAdded": "2019-7-1",
         "carId": 13,
+        "dateAdded": "2019-7-1",
         "color": "pink",
         "price": 77302,
         "vin": 1697703109712,
@@ -179,11 +205,13 @@
         "model": "Grand Cherokee",
         "make": "Cadillac",
         "plantId": 5,
-        "starred": true
+        "starred": true,
+        "latitude": 33.8461,
+        "longitude": 37.6621
     },
     {
-        "dateAdded": "2019-10-1",
         "carId": 14,
+        "dateAdded": "2019-10-1",
         "color": "black",
         "price": 97306,
         "vin": 589894997279,
@@ -192,11 +220,13 @@
         "model": "Grand Cherokee",
         "make": "Buick",
         "plantId": 7,
-        "starred": true
+        "starred": true,
+        "latitude": 34.156,
+        "longitude": 37.4488
     },
     {
-        "dateAdded": "2019-9-23",
         "carId": 15,
+        "dateAdded": "2019-9-23",
         "color": "black",
         "price": 27991,
         "vin": 572325928153,
@@ -205,11 +235,13 @@
         "model": "Mustang",
         "make": "Buick",
         "plantId": 7,
-        "starred": true
+        "starred": true,
+        "latitude": 31.952,
+        "longitude": 38.4262
     },
     {
-        "dateAdded": "2016-5-1",
         "carId": 16,
+        "dateAdded": "2016-5-1",
         "color": "green",
         "price": 17285,
         "vin": 1685298915748,
@@ -218,11 +250,13 @@
         "model": "Model X",
         "make": "Ford",
         "plantId": 2,
-        "starred": true
+        "starred": true,
+        "latitude": 35.358,
+        "longitude": 36.7408
     },
     {
-        "dateAdded": "2018-7-27",
         "carId": 17,
+        "dateAdded": "2018-7-27",
         "color": "purple",
         "price": 59582,
         "vin": 1348543491753,
@@ -231,11 +265,13 @@
         "model": "Wrangler",
         "make": "Buick",
         "plantId": 15,
-        "starred": false
+        "starred": false,
+        "latitude": 34.1741,
+        "longitude": 37.8068
     },
     {
-        "dateAdded": "2018-7-9",
         "carId": 18,
+        "dateAdded": "2018-7-9",
         "color": "pink",
         "price": 22264,
         "vin": 213970047538,
@@ -244,11 +280,13 @@
         "model": "Enclave",
         "make": "Jeep",
         "plantId": 4,
-        "starred": false
+        "starred": false,
+        "latitude": 35.5906,
+        "longitude": 38.1507
     },
     {
-        "dateAdded": "2017-1-21",
         "carId": 19,
+        "dateAdded": "2017-1-21",
         "color": "black",
         "price": 11239,
         "vin": 1073304477746,
@@ -257,11 +295,13 @@
         "model": "Encore",
         "make": "Jeep",
         "plantId": 1,
-        "starred": false
+        "starred": false,
+        "latitude": 33.2343,
+        "longitude": 35.3111
     },
     {
-        "dateAdded": "2017-4-27",
         "carId": 20,
+        "dateAdded": "2017-4-27",
         "color": "blue",
         "price": 92602,
         "vin": 1628925320929,
@@ -270,11 +310,13 @@
         "model": "Wrangler",
         "make": "Jeep",
         "plantId": 14,
-        "starred": false
+        "starred": false,
+        "latitude": 35.4765,
+        "longitude": 35.9735
     },
     {
-        "dateAdded": "2017-2-29",
         "carId": 21,
+        "dateAdded": "2017-2-29",
         "color": "silver",
         "price": 78625,
         "vin": 1029419467311,
@@ -283,11 +325,13 @@
         "model": "Enclave",
         "make": "Jeep",
         "plantId": 7,
-        "starred": false
+        "starred": false,
+        "latitude": 31.8106,
+        "longitude": 37.1468
     },
     {
-        "dateAdded": "2019-10-10",
         "carId": 22,
+        "dateAdded": "2019-10-10",
         "color": "green",
         "price": 14011,
         "vin": 1874707173221,
@@ -296,11 +340,13 @@
         "model": "Mustang",
         "make": "Buick",
         "plantId": 13,
-        "starred": false
+        "starred": false,
+        "latitude": 32.7738,
+        "longitude": 37.4962
     },
     {
-        "dateAdded": "2019-1-15",
         "carId": 23,
+        "dateAdded": "2019-1-15",
         "color": "blue",
         "price": 91379,
         "vin": 902771113814,
@@ -309,11 +355,13 @@
         "model": "Grand Cherokee",
         "make": "Ford",
         "plantId": 2,
-        "starred": true
+        "starred": true,
+        "latitude": 32.0561,
+        "longitude": 38.1609
     },
     {
-        "dateAdded": "2016-6-27",
         "carId": 24,
+        "dateAdded": "2016-6-27",
         "color": "blue",
         "price": 36964,
         "vin": 700196103237,
@@ -322,11 +370,13 @@
         "model": "Grand Cherokee",
         "make": "Tesla",
         "plantId": 3,
-        "starred": false
+        "starred": false,
+        "latitude": 34.1967,
+        "longitude": 36.0385
     },
     {
-        "dateAdded": "2018-5-3",
         "carId": 25,
+        "dateAdded": "2018-5-3",
         "color": "blue",
         "price": 25476,
         "vin": 1714771323282,
@@ -335,11 +385,13 @@
         "model": "Grand Cherokee",
         "make": "Jeep",
         "plantId": 9,
-        "starred": false
+        "starred": false,
+        "latitude": 33.7101,
+        "longitude": 37.4578
     },
     {
-        "dateAdded": "2017-9-4",
         "carId": 26,
+        "dateAdded": "2017-9-4",
         "color": "green",
         "price": 39350,
         "vin": 1851277054960,
@@ -348,11 +400,13 @@
         "model": "Model 3",
         "make": "Buick",
         "plantId": 7,
-        "starred": true
+        "starred": true,
+        "latitude": 33.6641,
+        "longitude": 35.2704
     },
     {
-        "dateAdded": "2018-9-2",
         "carId": 27,
+        "dateAdded": "2018-9-2",
         "color": "pink",
         "price": 46800,
         "vin": 1098858051789,
@@ -361,11 +415,13 @@
         "model": "Model X",
         "make": "Tesla",
         "plantId": 2,
-        "starred": false
+        "starred": false,
+        "latitude": 32.5441,
+        "longitude": 37.4097
     },
     {
-        "dateAdded": "2016-6-27",
         "carId": 28,
+        "dateAdded": "2016-6-27",
         "color": "silver",
         "price": 15921,
         "vin": 649158209834,
@@ -374,11 +430,13 @@
         "model": "Wrangler",
         "make": "Buick",
         "plantId": 10,
-        "starred": false
+        "starred": false,
+        "latitude": 32.5227,
+        "longitude": 36.4612
     },
     {
-        "dateAdded": "2019-1-5",
         "carId": 29,
+        "dateAdded": "2019-1-5",
         "color": "green",
         "price": 74089,
         "vin": 1578466355797,
@@ -387,11 +445,13 @@
         "model": "Model 3",
         "make": "Buick",
         "plantId": 12,
-        "starred": false
+        "starred": false,
+        "latitude": 35.5472,
+        "longitude": 36.9204
     },
     {
-        "dateAdded": "2018-9-7",
         "carId": 30,
+        "dateAdded": "2018-9-7",
         "color": "black",
         "price": 61377,
         "vin": 588033031765,
@@ -400,11 +460,13 @@
         "model": "Grand Cherokee",
         "make": "Cadillac",
         "plantId": 5,
-        "starred": false
+        "starred": false,
+        "latitude": 33.2669,
+        "longitude": 35.3704
     },
     {
-        "dateAdded": "2019-5-29",
         "carId": 31,
+        "dateAdded": "2019-5-29",
         "color": "blue",
         "price": 25645,
         "vin": 1711433727263,
@@ -413,11 +475,13 @@
         "model": "Model 3",
         "make": "Jeep",
         "plantId": 15,
-        "starred": false
+        "starred": false,
+        "latitude": 32.0141,
+        "longitude": 36.7023
     },
     {
-        "dateAdded": "2018-11-13",
         "carId": 32,
+        "dateAdded": "2018-11-13",
         "color": "blue",
         "price": 82792,
         "vin": 645028620620,
@@ -426,11 +490,13 @@
         "model": "Encore",
         "make": "Jeep",
         "plantId": 9,
-        "starred": true
+        "starred": true,
+        "latitude": 31.8011,
+        "longitude": 36.629
     },
     {
-        "dateAdded": "2019-9-3",
         "carId": 33,
+        "dateAdded": "2019-9-3",
         "color": "silver",
         "price": 90791,
         "vin": 995339365559,
@@ -439,11 +505,13 @@
         "model": "Enclave",
         "make": "Buick",
         "plantId": 13,
-        "starred": false
+        "starred": false,
+        "latitude": 32.2275,
+        "longitude": 36.9097
     },
     {
-        "dateAdded": "2017-3-22",
         "carId": 34,
+        "dateAdded": "2017-3-22",
         "color": "red",
         "price": 20337,
         "vin": 1838007349919,
@@ -452,11 +520,13 @@
         "model": "Model X",
         "make": "Ford",
         "plantId": 4,
-        "starred": true
+        "starred": true,
+        "latitude": 34.9699,
+        "longitude": 37.294
     },
     {
-        "dateAdded": "2016-11-2",
         "carId": 35,
+        "dateAdded": "2016-11-2",
         "color": "blue",
         "price": 97089,
         "vin": 512974151765,
@@ -465,11 +535,13 @@
         "model": "Grand Cherokee",
         "make": "Ford",
         "plantId": 6,
-        "starred": true
+        "starred": true,
+        "latitude": 34.2731,
+        "longitude": 38.2763
     },
     {
-        "dateAdded": "2016-9-23",
         "carId": 36,
+        "dateAdded": "2016-9-23",
         "color": "purple",
         "price": 29662,
         "vin": 964207016015,
@@ -478,11 +550,13 @@
         "model": "Model X",
         "make": "Cadillac",
         "plantId": 12,
-        "starred": true
+        "starred": true,
+        "latitude": 34.9144,
+        "longitude": 36.9664
     },
     {
-        "dateAdded": "2016-4-20",
         "carId": 37,
+        "dateAdded": "2016-4-20",
         "color": "pink",
         "price": 72214,
         "vin": 509348290090,
@@ -491,11 +565,13 @@
         "model": "Enclave",
         "make": "Buick",
         "plantId": 13,
-        "starred": false
+        "starred": false,
+        "latitude": 34.8333,
+        "longitude": 36.1458
     },
     {
-        "dateAdded": "2016-7-13",
         "carId": 38,
+        "dateAdded": "2016-7-13",
         "color": "silver",
         "price": 65800,
         "vin": 18515148577,
@@ -504,11 +580,13 @@
         "model": "Model X",
         "make": "Jeep",
         "plantId": 1,
-        "starred": true
+        "starred": true,
+        "latitude": 33.513,
+        "longitude": 37.6032
     },
     {
-        "dateAdded": "2016-2-22",
         "carId": 39,
+        "dateAdded": "2016-2-22",
         "color": "blue",
         "price": 72615,
         "vin": 345477209694,
@@ -517,11 +595,13 @@
         "model": "Model 3",
         "make": "Tesla",
         "plantId": 4,
-        "starred": false
+        "starred": false,
+        "latitude": 34.3869,
+        "longitude": 38.0642
     },
     {
-        "dateAdded": "2018-3-13",
         "carId": 40,
+        "dateAdded": "2018-3-13",
         "color": "blue",
         "price": 74984,
         "vin": 761174635672,
@@ -530,11 +610,13 @@
         "model": "Grand Cherokee",
         "make": "Cadillac",
         "plantId": 13,
-        "starred": true
+        "starred": true,
+        "latitude": 32.9229,
+        "longitude": 37.9227
     },
     {
-        "dateAdded": "2016-6-2",
         "carId": 41,
+        "dateAdded": "2016-6-2",
         "color": "silver",
         "price": 11352,
         "vin": 1246638158209,
@@ -543,11 +625,13 @@
         "model": "Grand Cherokee",
         "make": "Jeep",
         "plantId": 13,
-        "starred": true
+        "starred": true,
+        "latitude": 35.3292,
+        "longitude": 35.4572
     },
     {
-        "dateAdded": "2016-7-10",
         "carId": 42,
+        "dateAdded": "2016-7-10",
         "color": "brown",
         "price": 70750,
         "vin": 1795150885757,
@@ -556,11 +640,13 @@
         "model": "Mustang",
         "make": "Tesla",
         "plantId": 14,
-        "starred": true
+        "starred": true,
+        "latitude": 31.8986,
+        "longitude": 38.2197
     },
     {
-        "dateAdded": "2018-4-17",
         "carId": 43,
+        "dateAdded": "2018-4-17",
         "color": "purple",
         "price": 39077,
         "vin": 1467735514485,
@@ -569,11 +655,13 @@
         "model": "Model 3",
         "make": "Buick",
         "plantId": 1,
-        "starred": false
+        "starred": false,
+        "latitude": 34.4693,
+        "longitude": 36.4205
     },
     {
-        "dateAdded": "2017-2-16",
         "carId": 44,
+        "dateAdded": "2017-2-16",
         "color": "purple",
         "price": 87370,
         "vin": 179986447055,
@@ -582,11 +670,13 @@
         "model": "Encore",
         "make": "Cadillac",
         "plantId": 5,
-        "starred": false
+        "starred": false,
+        "latitude": 32.7948,
+        "longitude": 37.3617
     },
     {
-        "dateAdded": "2018-5-12",
         "carId": 45,
+        "dateAdded": "2018-5-12",
         "color": "purple",
         "price": 61432,
         "vin": 1597647150316,
@@ -595,11 +685,13 @@
         "model": "Model 3",
         "make": "Jeep",
         "plantId": 7,
-        "starred": false
+        "starred": false,
+        "latitude": 34.7154,
+        "longitude": 35.6743
     },
     {
-        "dateAdded": "2016-8-15",
         "carId": 46,
+        "dateAdded": "2016-8-15",
         "color": "red",
         "price": 35744,
         "vin": 387938265253,
@@ -608,11 +700,13 @@
         "model": "Enclave",
         "make": "Ford",
         "plantId": 8,
-        "starred": true
+        "starred": true,
+        "latitude": 33.6915,
+        "longitude": 37.5589
     },
     {
-        "dateAdded": "2016-3-19",
         "carId": 47,
+        "dateAdded": "2016-3-19",
         "color": "pink",
         "price": 20514,
         "vin": 606739819361,
@@ -621,11 +715,13 @@
         "model": "Model X",
         "make": "Ford",
         "plantId": 11,
-        "starred": false
+        "starred": false,
+        "latitude": 32.1298,
+        "longitude": 36.1561
     },
     {
-        "dateAdded": "2017-6-27",
         "carId": 48,
+        "dateAdded": "2017-6-27",
         "color": "pink",
         "price": 55714,
         "vin": 488881874305,
@@ -634,11 +730,13 @@
         "model": "Model X",
         "make": "Tesla",
         "plantId": 5,
-        "starred": false
+        "starred": false,
+        "latitude": 33.3573,
+        "longitude": 38.1129
     },
     {
-        "dateAdded": "2019-4-29",
         "carId": 49,
+        "dateAdded": "2019-4-29",
         "color": "silver",
         "price": 32331,
         "vin": 92386141303,
@@ -647,6 +745,8 @@
         "model": "Enclave",
         "make": "Cadillac",
         "plantId": 14,
-        "starred": false
+        "starred": false,
+        "latitude": 34.1452,
+        "longitude": 35.9817
     }
 ]
