@@ -1,6 +1,23 @@
 import { Component } from '@angular/core';
+import dummyData from '../assets/dummyData.json';
 
 declare var ol: any;
+
+export interface Car {
+  carId: number;
+  dateAdded: string;
+  color: string;
+  price: number;
+  vin: number;
+  lastUpdated: string;
+  year: number;
+  model: string;
+  make: string;
+  plantId: number;
+  starred: boolean;
+  latitude: number;
+  longitude: number;
+}
 
 @Component({
   selector: 'app-root',
@@ -17,6 +34,7 @@ export class AppComponent {
   longitude: number = 73.8567;
 
   map: any;
+  latLong = new Array<Car>();
 
   /*
   may be needed for future
@@ -40,6 +58,33 @@ export class AppComponent {
         zoom: 8
       })
     });
+    this.generateCoordinates();
+  }
+
+  // Generate random coordinates for OpenStreetMaps
+  generateCoordinates() {
+    dummyData.forEach(element => {
+      // let longitude = (Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4);
+      // let longitude = (Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4);
+      //
+      // let car = {
+      //   carId: element.carId,
+      //   dateAdded: element.dateAdded,
+      //   color: element.color,
+      //   price: element.price,
+      //   vin: element.vin,
+      //   lastUpdated: element.lastUpdated,
+      //   year: element.year,
+      //   model: element.model,
+      //   make: element.make,
+      //   plantId: element.plantId,
+      //   starred: element.starred,
+      //   latitude: this.latitude,
+      //   longitude: this.longitude
+      // }
+      // this.latLong.push(car);
+    });
+    console.log(this.latLong);
   }
 
 }

@@ -3,20 +3,6 @@ import dummyData from '../../assets/dummyData.json';
 import {MatTableDataSource} from '@angular/material';
 import {Router} from '@angular/router';
 
-export interface Car {
-  carId: number;
-  dateAdded: string;
-  color: string;
-  price: number;
-  vin: number;
-  lastUpdated: string;
-  year: number;
-  model: string;
-  make: string;
-  plantId: number;
-  starred: boolean;
-}
-
 @Component({
   selector: 'app-starred',
   templateUrl: './starred.component.html',

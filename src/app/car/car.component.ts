@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import dummyData from '../../assets/dummyData.json';
-import {Car} from '../recently-added/recently-added.component';
 
 @Component({
   selector: 'app-car',
@@ -10,7 +9,7 @@ import {Car} from '../recently-added/recently-added.component';
 })
 export class CarComponent implements OnInit {
   id: number;
-  car: Car;
+  car: any;
 
   constructor(private activeRoute: ActivatedRoute) {
     this.activeRoute.queryParams.subscribe(params => {

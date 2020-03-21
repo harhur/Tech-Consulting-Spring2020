@@ -2,20 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import dummyData from '../../assets/dummyData.json';
 import {MatTableDataSource} from '@angular/material';
 import {Router} from '@angular/router';
-
-export interface Car {
-  carId: number;
-  dateAdded: string;
-  color: string;
-  price: number;
-  vin: number;
-  lastUpdated: string;
-  year: number;
-  model: string;
-  make: string;
-  plantId: number;
-  starred: boolean;
-}
+import {Car} from '../app.component';
 
 @Component({
   selector: 'app-recently-added',
