@@ -1,0 +1,21 @@
+@import '../app.component.css';
+
+.panel {
+    padding-top: 10px;
+    width: 350px;
+    height: 220px;
+    background: #6D6D6D;
+    border-radius: 25px;
+    box-shadow: -1px 3px 18px 10px #C8C8C8;
+}
+
+.panel-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+li {
+    padding-top: 2px;
+}
+
