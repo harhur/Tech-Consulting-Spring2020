@@ -2,6 +2,16 @@
     flex: 1 1 auto;
 }
 
+.SogoLogo {
+  width: 30px;
+  height: 40px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
 table {
     width: 80%;
 }
