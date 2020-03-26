@@ -12,16 +12,48 @@ table {
 }
 
 .mat-input-element::placeholder{
-    color: cornflowerblue;
+    color: steelblue;
     font-size: medium;
-    font-weight: bold;
+    font-weight: 400;
+}
+
+::ng-deep.mat-form-field-ripple {
+    background-color: green !important;
 }
 
 .mat-row:hover {
-    background-color: cornflowerblue;
+    background-color: steelblue;
+}
+
+.mat-header-cell {
+    background-color: #6D6D6D;
+}
+
+.mat-row {
+    background-color: #6D6D6D;
 }
 
 .map {
     width: 75%;
     height: 90%;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: SteelBlue;
+}
+
+div {
+    padding-left: 30px;
 }
