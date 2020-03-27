@@ -10,11 +10,13 @@ import {Car} from '../app.component';
 
 export class AnalyticsComponent implements OnInit {
     carArray: Car[];
-    numStarred = 0;
+    numStarred: number;
 
     constructor() {
         let jsonString = JSON.stringify(dummyData);
         this.carArray = JSON.parse(jsonString);
+        this.numStarred=0;
+        this.numStarredCars();
     }
 
     ngOnInit() {}
