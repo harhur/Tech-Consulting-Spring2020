@@ -1,22 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import dummyData from '../../assets/dummyData.json';
-import {Car} from '../recently-added/recently-added.component';
+import {Car} from '../app.component';
 import {MatTableDataSource} from '@angular/material';
 import {Router} from '@angular/router';
 
-export interface Car {
-  carId: number;
-  dateAdded: string;
-  color: string;
-  price: number;
-  vin: number;
-  lastUpdated: string;
-  year: number;
-  model: string;
-  make: string;
-  plantId: number;
-  starred: boolean;
-}
 
 @Component({
   selector: 'app-view-all',
