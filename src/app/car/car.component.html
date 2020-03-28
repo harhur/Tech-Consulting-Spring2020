@@ -1,23 +1,24 @@
-<br>
-<a mat-raised-button class="text" [color]="'success'" href="javascript:history.back()">
-  Back</a>
-    <div class="row">
-        <div class="col">
-            <h2>Details about the <em>{{this.car.model}} - {{this.car.make}}</em></h2>
+<div>
+    <a mat-raised-button class="text" style="margin-top: 30px" [color]="'success'" href="javascript:history.back()">Back</a>
+</div>
 
-            <ul class="panel">
-                <span class="panel-text">
-                    <li>Car ID: {{this.car?.carId}}</li>
-                    <li>Model: {{this.car?.model}} - {{this.car.year}}</li>
-                    <li>Make: {{this.car?.make}}</li>
-                    <li>Color: {{this.car?.color}}</li>
-                    <li>Price: {{this.car?.price}}</li>
-                    <li>Date added: {{this.car?.dateAdded}}</li>
-                    <li>Last updated: {{this.car?.lastUpdated}}</li>
-                    <li>Vehicle Identification: {{this.car?.vin}}</li>
-                    <li>Plant ID: {{this.car?.plantId}}</li>
-                    <li>Starred: {{this.car?.starred}}</li>
-                </span>
-            </ul>
-        </div>
+<div class="row">
+    <div class="col">
+        <h2>Details about the <em>{{this.car.model}} - {{this.car.make}}</em></h2>
+
+        <ul class="panel">
+            <span class="panel-text">
+                <li>Car ID: {{this.car?.carId}}</li>
+                <li>Model: {{this.car?.model}} - {{this.car.year}}</li>
+                <li>Make: {{this.car?.make}}</li>
+                <li>Color: {{this.car?.color}}</li>
+                <li>Price: {{this.car?.price}}</li>
+                <li>Date added: {{this.car?.dateAdded}}</li>
+                <li>Last updated: {{this.car?.lastUpdated}}</li>
+                <li>Vehicle Identification: {{this.car?.vin}}</li>
+                <li>Plant ID: {{this.car?.plantId}}</li>
+                <li>Starred: {{this.car?.starred}}</li>
+            </span>
+        </ul>
     </div>
+</div>
