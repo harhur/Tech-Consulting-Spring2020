@@ -12,14 +12,23 @@ export class AnalyticsComponent implements OnInit {
     carArray: Car[];
     numStarred: number;
     mostCommonColor: string;
+    mostCommonMake: string;
+    lowestPrice: number;
+    highestPrice: number;
 
     constructor() {
         let jsonString = JSON.stringify(dummyData);
         this.carArray = JSON.parse(jsonString);
         this.numStarred=0;
         this.mostCommonColor="";
+        this.mostCommonMake="";
+        this.lowestPrice=0;
+        this.highestPrice=0;
         this.numStarredCars();
         this.mostCommonCarColor();
+        this.mostCommonCarMake();
+        this.lowestCarPrice();
+        this.highestCarPrice();
     }
 
     ngOnInit() {}
@@ -57,5 +66,38 @@ export class AnalyticsComponent implements OnInit {
       this.mostCommonColor = carColorArr[colorNumArr.indexOf(Math.max(...colorNumArr))];
     }
 
+    mostCommonCarMake() {
+      var carMakeArr = [];
+      var makeNumArr = [];
+      for(let car of this.carArray) {
+        if(carMakeArr.indexOf(car.make) == -1) {
+          carMakeArr.push(car.make);
+          makeNumArr.push(1);
+        }
+        else {
+          makeNumArr[carMakeArr.indexOf(car.make)] = makeNumArr[carMakeArr.indexOf(car.make)] + 1;
+        }
+      }
+      this.mostCommonMake = carMakeArr[makeNumArr.indexOf(Math.max(...makeNumArr))];
+    }
 
+    lowestCarPrice() {
+      var minPrice = this.carArray[0].price;
+      for(let car of this.carArray) {
+        if(car.price < minPrice) {
+          minPrice = car.price;
+        }
+      }
+      this.lowestPrice = minPrice;
+    }
+
+    highestCarPrice() {
+      var maxPrice = this.carArray[0].price;
+      for(let car of this.carArray) {
+        if(car.price > maxPrice) {
+          maxPrice = car.price;
+        }
+      }
+      this.highestPrice = maxPrice;
+    }
 }
