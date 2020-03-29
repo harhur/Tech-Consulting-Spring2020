@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import dummyData from '../assets/dummyData.json';
+import {ActivatedRoute, Router} from '@angular/router';
 
 declare var ol: any;
 
@@ -35,6 +36,9 @@ export class AppComponent {
 
   map: any;
   latLong = new Array<Car>();
+
+  constructor(private router: Router) {
+  }
 
   /*
   may be needed for future
@@ -85,7 +89,10 @@ export class AppComponent {
 
       this.latLong.push(car);
     });
-    console.log(this.latLong);
+  }
+
+  isNotHomepage() {
+    return this.router.url !== '/';
   }
 
 }

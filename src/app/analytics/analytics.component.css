@@ -1,1 +1,16 @@
 @import '../app.component.css';
+
+tr:hover {background-color: #eeddff}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
+
+caption {
+    background-color: #eeeeee;
+    font-weight: bold;
+}
