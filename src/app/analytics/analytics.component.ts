@@ -16,6 +16,8 @@ export class AnalyticsComponent implements OnInit {
     numStarred: number;
     mostCommonColor: string;
     carsAddedThirtyDays: number;
+    carTotal: number;
+    earliestToLatest: string;
 
     constructor() {
         let jsonString = JSON.stringify(dummyData);
@@ -23,6 +25,8 @@ export class AnalyticsComponent implements OnInit {
         this.numStarred=0;
         this.mostCommonColor="";
         this.carsAddedThirtyDays=0;
+        this.carTotal=0;
+        this.earliestToLatest="";
         this.numStarredCars();
         this.mostCommonCarColor();
         this.carsAddedOverThirtyDays();
@@ -47,6 +51,29 @@ export class AnalyticsComponent implements OnInit {
             }
         }
     }
+    totalCarCount() {
+    for (let car of this.carArray) {
+        this.carTotal += 1;
+    }
+  }
+
+  carEarliestToLatest() {
+   var earliestDate = 99999;
+   var latestDate = -9999;
+
+    for (let car of this.carArray) {
+
+        if(parseInt(car.dateAdded) <= earliestDate) {
+
+          earliestDate = parseInt(car.dateAdded);
+        }
+        if(parseInt(car.dateAdded) >= latestDate) {
+          latestDate = parseInt(car.dateAdded);
+        }
+    }
+    this.earliestToLatest = earliestDate.toString() + " - " + latestDate.toString();
+  }
+
 
     mostCommonCarColor() {
       var carColorArr = [];
