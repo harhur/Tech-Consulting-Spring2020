@@ -7,6 +7,11 @@
   height: 40px;
 }
 
+.nav-header {
+    letter-spacing: 4px;
+    color: white;
+}
+
 a {
   text-decoration: none;
 }
@@ -71,6 +76,7 @@ div {
 
 .analytics {
   border-collapse: collapse;
+  width: 30%;
 }
 
 .loc {

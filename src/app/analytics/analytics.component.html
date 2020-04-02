@@ -1,22 +1,29 @@
-
+<h2 align="center">
+  Analytics
+</h2>
 <table>
-  <caption>
-    Analytics
-  </caption>
   <tr>
-    <th> Average Vehicle Price: </th>
-    <td> ${{ priceAverage() }} </td>
+    <th> Total Cars </th>
+    <td> {{ carTotal }} </td>
   </tr>
   <tr>
-    <th> Starred Vehicles: </th>
+    <th> Average Vehicle Price: </th>
+    <td> ${{ priceAverage() | number }} </td>
+  </tr>
+  <tr>
+    <th> Starred Vehicles </th>
     <td> {{ numStarred }} </td>
   </tr>
   <tr>
-    <th> Most Common Car Color: </th>
+    <th> Most Common Car Color </th>
     <td> {{ mostCommonColor }} </td>
   </tr>
   <tr>
     <th> Additional Cars Last 30 Days </th>
     <td> {{ carsAddedThirtyDays }} </td>
+  </tr>
+  <tr>
+    <th> Earliest / Latest Models </th>
+    <td> {{ earliestToLatest }} </td>
   </tr>
 </table>

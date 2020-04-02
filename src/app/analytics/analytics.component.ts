@@ -32,7 +32,10 @@ export class AnalyticsComponent implements OnInit {
         this.carsAddedOverThirtyDays();
     }
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.totalCarCount();
+        this.carEarliestToLatest();
+    }
 
     priceAverage() {
       var total = 0;
@@ -51,11 +54,12 @@ export class AnalyticsComponent implements OnInit {
             }
         }
     }
+
     totalCarCount() {
-    for (let car of this.carArray) {
-        this.carTotal += 1;
-    }
-  }
+        for (let car of this.carArray) {
+            this.carTotal += 1;
+        }
+      }
 
   carEarliestToLatest() {
    var earliestDate = 99999;
@@ -71,7 +75,7 @@ export class AnalyticsComponent implements OnInit {
           latestDate = parseInt(car.dateAdded);
         }
     }
-    this.earliestToLatest = earliestDate.toString() + " - " + latestDate.toString();
+    this.earliestToLatest = earliestDate.toString() + " ~ " + latestDate.toString();
   }
 
 
