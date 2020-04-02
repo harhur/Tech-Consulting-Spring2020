@@ -1,25 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import dummyData from '../../assets/dummyData.json';
 import {Car} from '../app.component';
+import { DatePipe } from '@angular/common';
+import { formatDate } from "@angular/common";
 
 @Component({
     selector: 'app-analytics',
     templateUrl: './analytics.component.html',
-    styleUrls: ['./analytics.component.css']
+    styleUrls: ['./analytics.component.css'],
+    providers: [DatePipe]
 })
 
 export class AnalyticsComponent implements OnInit {
     carArray: Car[];
     numStarred: number;
     mostCommonColor: string;
+    carsAddedThirtyDays: number;
 
     constructor() {
         let jsonString = JSON.stringify(dummyData);
         this.carArray = JSON.parse(jsonString);
         this.numStarred=0;
         this.mostCommonColor="";
+        this.carsAddedThirtyDays=0;
         this.numStarredCars();
         this.mostCommonCarColor();
+        this.carsAddedOverThirtyDays();
     }
 
     ngOnInit() {}
@@ -55,6 +61,38 @@ export class AnalyticsComponent implements OnInit {
         }
       }
       this.mostCommonColor = carColorArr[colorNumArr.indexOf(Math.max(...colorNumArr))];
+    }
+
+    carsAddedOverThirtyDays() {
+      var currDate = new Date();
+      var stringTest = formatDate(currDate, "dd/MM/yyyy", 'en-US');
+      var day = Number(stringTest.substring(0,2));
+      var month = Number(stringTest.substring(3, 5));
+      var year = Number(stringTest.substring(6,10));
+      console.log(year)
+
+      for(let car of this.carArray) {
+        var carAdded = car.dateAdded;
+        var carAddedArr = carAdded.split("-", 3);
+        var carAddedYear = Number(carAddedArr[0]);
+        var carAddedMonth = Number(carAddedArr[1]);
+        var carAddedDay = Number(carAddedArr[2]);
+        if(year - carAddedYear == 1) {
+          if(month == 1 && carAddedMonth == 12) {
+            if(carAddedDay > day) {
+              this.carsAddedThirtyDays += 1;
+            }
+          }
+        } else if(year == carAddedYear) {
+            if (month == carAddedMonth) {
+              this.carsAddedThirtyDays += 1;
+            } else if (month - carAddedMonth == 1) {
+              if(carAddedDay > day) {
+                this.carsAddedThirtyDays += 1;
+              }
+            }
+        }
+      }
     }
 
 

@@ -391,7 +391,7 @@
     },
     {
         "carId": 26,
-        "dateAdded": "2017-9-4",
+        "dateAdded": "2020-3-9",
         "color": "green",
         "price": 39350,
         "vin": 1851277054960,
@@ -436,7 +436,7 @@
     },
     {
         "carId": 29,
-        "dateAdded": "2019-1-5",
+        "dateAdded": "2020-1-5",
         "color": "green",
         "price": 74089,
         "vin": 1578466355797,
@@ -601,7 +601,7 @@
     },
     {
         "carId": 40,
-        "dateAdded": "2018-3-13",
+        "dateAdded": "2020-3-13",
         "color": "blue",
         "price": 74984,
         "vin": 761174635672,
@@ -721,7 +721,7 @@
     },
     {
         "carId": 48,
-        "dateAdded": "2017-6-27",
+        "dateAdded": "2020-3-27",
         "color": "pink",
         "price": 55714,
         "vin": 488881874305,
@@ -736,7 +736,7 @@
     },
     {
         "carId": 49,
-        "dateAdded": "2019-4-29",
+        "dateAdded": "2020-3-2",
         "color": "silver",
         "price": 32331,
         "vin": 92386141303,
