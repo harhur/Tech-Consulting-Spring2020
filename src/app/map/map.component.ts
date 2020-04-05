@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import dummyData from '../../assets/dummyData.json';
 import {Car} from '../app.component';
-import {Router} from '@angular/router';
 
 declare var ol: any;
 

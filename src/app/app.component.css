@@ -50,6 +50,7 @@ table {
 .home-row {
     display: flex;
     padding-left: 0px !important;
+    padding-right: 15px;
 }
 
 .map {

@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import dummyData from '../assets/dummyData.json';
-import {ActivatedRoute, Router} from '@angular/router';
-
-declare var ol: any;
+import {Router} from '@angular/router';
 
 export interface Car {
   carId: number;
@@ -30,9 +28,6 @@ export interface Car {
 // https://medium.com/@balramchavan/using-openstreetmap-inside-angular-v6-3d42cbf03e57
 export class AppComponent {
   title = 'sogo-services';
-
-  latitude: number = 18.5204;
-  longitude: number = 73.8567;
 
   map: any;
   latLong = new Array<Car>();
