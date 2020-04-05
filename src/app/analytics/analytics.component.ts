@@ -100,7 +100,6 @@ export class AnalyticsComponent implements OnInit {
       var day = Number(stringTest.substring(0,2));
       var month = Number(stringTest.substring(3, 5));
       var year = Number(stringTest.substring(6,10));
-      console.log(year)
 
       for(let car of this.carArray) {
         var carAdded = car.dateAdded;

@@ -11,8 +11,8 @@
         "make": "Ford",
         "plantId": 1,
         "starred": true,
-        "latitude": 32.4442,
-        "longitude": 35.2501
+        "latitude": 34.9982,
+        "longitude": 31.9482
     },
     {
         "carId": 1,
@@ -26,8 +26,8 @@
         "make": "Cadillac",
         "plantId": 5,
         "starred": false,
-        "latitude": 34.2332,
-        "longitude": 35.6008
+        "latitude": 34.9103,
+        "longitude": 32.4338
     },
     {
         "carId": 2,
@@ -41,8 +41,8 @@
         "make": "Tesla",
         "plantId": 5,
         "starred": false,
-        "latitude": 35.3603,
-        "longitude": 36.1689
+        "latitude": 35.0506,
+        "longitude": 31.469
     },
     {
         "carId": 3,
@@ -56,8 +56,8 @@
         "make": "Jeep",
         "plantId": 14,
         "starred": true,
-        "latitude": 33.335,
-        "longitude": 35.9415
+        "latitude": 35.0312,
+        "longitude": 31.0454
     },
     {
         "carId": 4,
@@ -71,8 +71,8 @@
         "make": "Cadillac",
         "plantId": 1,
         "starred": false,
-        "latitude": 34.1951,
-        "longitude": 35.2336
+        "latitude": 34.9269,
+        "longitude": 31.868
     },
     {
         "carId": 5,
@@ -86,8 +86,8 @@
         "make": "Buick",
         "plantId": 11,
         "starred": true,
-        "latitude": 34.7889,
-        "longitude": 37.4065
+        "latitude": 35.0307,
+        "longitude": 31.088
     },
     {
         "carId": 6,
@@ -101,8 +101,8 @@
         "make": "Ford",
         "plantId": 14,
         "starred": false,
-        "latitude": 34.0468,
-        "longitude": 36.4077
+        "latitude": 35.0083,
+        "longitude": 32.3554
     },
     {
         "carId": 7,
@@ -116,8 +116,8 @@
         "make": "Buick",
         "plantId": 2,
         "starred": false,
-        "latitude": 33.805,
-        "longitude": 36.1382
+        "latitude": 34.9819,
+        "longitude": 32.1057
     },
     {
         "carId": 8,
@@ -131,8 +131,8 @@
         "make": "Jeep",
         "plantId": 9,
         "starred": false,
-        "latitude": 34.7852,
-        "longitude": 37.1202
+        "latitude": 35.0643,
+        "longitude": 31.1361
     },
     {
         "carId": 9,
@@ -146,8 +146,8 @@
         "make": "Ford",
         "plantId": 1,
         "starred": true,
-        "latitude": 33.3951,
-        "longitude": 36.225
+        "latitude": 35.0478,
+        "longitude": 31.1436
     },
     {
         "carId": 10,
@@ -161,8 +161,8 @@
         "make": "Cadillac",
         "plantId": 15,
         "starred": true,
-        "latitude": 34.2878,
-        "longitude": 36.3266
+        "latitude": 35.0503,
+        "longitude": 31.0142
     },
     {
         "carId": 11,
@@ -176,8 +176,8 @@
         "make": "Tesla",
         "plantId": 3,
         "starred": true,
-        "latitude": 35.4278,
-        "longitude": 35.7106
+        "latitude": 34.9153,
+        "longitude": 31.6935
     },
     {
         "carId": 12,
@@ -191,8 +191,8 @@
         "make": "Buick",
         "plantId": 4,
         "starred": true,
-        "latitude": 34.8371,
-        "longitude": 35.7863
+        "latitude": 34.9718,
+        "longitude": 31.6939
     },
     {
         "carId": 13,
@@ -206,8 +206,8 @@
         "make": "Cadillac",
         "plantId": 5,
         "starred": true,
-        "latitude": 33.8461,
-        "longitude": 37.6621
+        "latitude": 35.0771,
+        "longitude": 32.2782
     },
     {
         "carId": 14,
@@ -221,8 +221,8 @@
         "make": "Buick",
         "plantId": 7,
         "starred": true,
-        "latitude": 34.156,
-        "longitude": 37.4488
+        "latitude": 35.0596,
+        "longitude": 31.8788
     },
     {
         "carId": 15,
@@ -236,8 +236,8 @@
         "make": "Buick",
         "plantId": 7,
         "starred": true,
-        "latitude": 31.952,
-        "longitude": 38.4262
+        "latitude": 34.9414,
+        "longitude": 32.3161
     },
     {
         "carId": 16,
@@ -251,8 +251,8 @@
         "make": "Ford",
         "plantId": 2,
         "starred": true,
-        "latitude": 35.358,
-        "longitude": 36.7408
+        "latitude": 34.9629,
+        "longitude": 31.965
     },
     {
         "carId": 17,
@@ -266,8 +266,8 @@
         "make": "Buick",
         "plantId": 15,
         "starred": false,
-        "latitude": 34.1741,
-        "longitude": 37.8068
+        "latitude": 34.9586,
+        "longitude": 31.9483
     },
     {
         "carId": 18,
@@ -281,8 +281,8 @@
         "make": "Jeep",
         "plantId": 4,
         "starred": false,
-        "latitude": 35.5906,
-        "longitude": 38.1507
+        "latitude": 35.064,
+        "longitude": 31.5121
     },
     {
         "carId": 19,
@@ -296,8 +296,8 @@
         "make": "Jeep",
         "plantId": 1,
         "starred": false,
-        "latitude": 33.2343,
-        "longitude": 35.3111
+        "latitude": 35.0517,
+        "longitude": 31.0958
     },
     {
         "carId": 20,
@@ -311,8 +311,8 @@
         "make": "Jeep",
         "plantId": 14,
         "starred": false,
-        "latitude": 35.4765,
-        "longitude": 35.9735
+        "latitude": 35.0181,
+        "longitude": 31.5831
     },
     {
         "carId": 21,
@@ -326,8 +326,8 @@
         "make": "Jeep",
         "plantId": 7,
         "starred": false,
-        "latitude": 31.8106,
-        "longitude": 37.1468
+        "latitude": 35.0459,
+        "longitude": 31.2971
     },
     {
         "carId": 22,
@@ -341,8 +341,8 @@
         "make": "Buick",
         "plantId": 13,
         "starred": false,
-        "latitude": 32.7738,
-        "longitude": 37.4962
+        "latitude": 35.051,
+        "longitude": 31.2322
     },
     {
         "carId": 23,
@@ -356,8 +356,8 @@
         "make": "Ford",
         "plantId": 2,
         "starred": true,
-        "latitude": 32.0561,
-        "longitude": 38.1609
+        "latitude": 34.9897,
+        "longitude": 31.0937
     },
     {
         "carId": 24,
@@ -371,8 +371,8 @@
         "make": "Tesla",
         "plantId": 3,
         "starred": false,
-        "latitude": 34.1967,
-        "longitude": 36.0385
+        "latitude": 34.922,
+        "longitude": 32.3254
     },
     {
         "carId": 25,
@@ -386,8 +386,8 @@
         "make": "Jeep",
         "plantId": 9,
         "starred": false,
-        "latitude": 33.7101,
-        "longitude": 37.4578
+        "latitude": 34.9262,
+        "longitude": 31.3776
     },
     {
         "carId": 26,
@@ -401,8 +401,8 @@
         "make": "Buick",
         "plantId": 7,
         "starred": true,
-        "latitude": 33.6641,
-        "longitude": 35.2704
+        "latitude": 34.9833,
+        "longitude": 31.6307
     },
     {
         "carId": 27,
@@ -416,8 +416,8 @@
         "make": "Tesla",
         "plantId": 2,
         "starred": false,
-        "latitude": 32.5441,
-        "longitude": 37.4097
+        "latitude": 34.9588,
+        "longitude": 31.6962
     },
     {
         "carId": 28,
@@ -431,8 +431,8 @@
         "make": "Buick",
         "plantId": 10,
         "starred": false,
-        "latitude": 32.5227,
-        "longitude": 36.4612
+        "latitude": 34.997,
+        "longitude": 31.1784
     },
     {
         "carId": 29,
@@ -446,8 +446,8 @@
         "make": "Buick",
         "plantId": 12,
         "starred": false,
-        "latitude": 35.5472,
-        "longitude": 36.9204
+        "latitude": 35.0785,
+        "longitude": 31.7641
     },
     {
         "carId": 30,
@@ -461,8 +461,8 @@
         "make": "Cadillac",
         "plantId": 5,
         "starred": false,
-        "latitude": 33.2669,
-        "longitude": 35.3704
+        "latitude": 35.0379,
+        "longitude": 32.3767
     },
     {
         "carId": 31,
@@ -476,8 +476,8 @@
         "make": "Jeep",
         "plantId": 15,
         "starred": false,
-        "latitude": 32.0141,
-        "longitude": 36.7023
+        "latitude": 34.986,
+        "longitude": 32.4881
     },
     {
         "carId": 32,
@@ -491,8 +491,8 @@
         "make": "Jeep",
         "plantId": 9,
         "starred": true,
-        "latitude": 31.8011,
-        "longitude": 36.629
+        "latitude": 35.0018,
+        "longitude": 31.6285
     },
     {
         "carId": 33,
@@ -506,8 +506,8 @@
         "make": "Buick",
         "plantId": 13,
         "starred": false,
-        "latitude": 32.2275,
-        "longitude": 36.9097
+        "latitude": 34.9912,
+        "longitude": 32.2209
     },
     {
         "carId": 34,
@@ -521,8 +521,8 @@
         "make": "Ford",
         "plantId": 4,
         "starred": true,
-        "latitude": 34.9699,
-        "longitude": 37.294
+        "latitude": 34.9519,
+        "longitude": 31.8518
     },
     {
         "carId": 35,
@@ -536,8 +536,8 @@
         "make": "Ford",
         "plantId": 6,
         "starred": true,
-        "latitude": 34.2731,
-        "longitude": 38.2763
+        "latitude": 34.9733,
+        "longitude": 31.6513
     },
     {
         "carId": 36,
@@ -551,8 +551,8 @@
         "make": "Cadillac",
         "plantId": 12,
         "starred": true,
-        "latitude": 34.9144,
-        "longitude": 36.9664
+        "latitude": 35.0692,
+        "longitude": 32.4106
     },
     {
         "carId": 37,
@@ -566,8 +566,8 @@
         "make": "Buick",
         "plantId": 13,
         "starred": false,
-        "latitude": 34.8333,
-        "longitude": 36.1458
+        "latitude": 34.9142,
+        "longitude": 31.0467
     },
     {
         "carId": 38,
@@ -581,8 +581,8 @@
         "make": "Jeep",
         "plantId": 1,
         "starred": true,
-        "latitude": 33.513,
-        "longitude": 37.6032
+        "latitude": 35.0607,
+        "longitude": 31.9105
     },
     {
         "carId": 39,
@@ -596,8 +596,8 @@
         "make": "Tesla",
         "plantId": 4,
         "starred": false,
-        "latitude": 34.3869,
-        "longitude": 38.0642
+        "latitude": 35.0517,
+        "longitude": 31.7858
     },
     {
         "carId": 40,
@@ -611,8 +611,8 @@
         "make": "Cadillac",
         "plantId": 13,
         "starred": true,
-        "latitude": 32.9229,
-        "longitude": 37.9227
+        "latitude": 34.9727,
+        "longitude": 31.3142
     },
     {
         "carId": 41,
@@ -626,8 +626,8 @@
         "make": "Jeep",
         "plantId": 13,
         "starred": true,
-        "latitude": 35.3292,
-        "longitude": 35.4572
+        "latitude": 34.9851,
+        "longitude": 31.5778
     },
     {
         "carId": 42,
@@ -641,8 +641,8 @@
         "make": "Tesla",
         "plantId": 14,
         "starred": true,
-        "latitude": 31.8986,
-        "longitude": 38.2197
+        "latitude": 35.0356,
+        "longitude": 31.6325
     },
     {
         "carId": 43,
@@ -656,8 +656,8 @@
         "make": "Buick",
         "plantId": 1,
         "starred": false,
-        "latitude": 34.4693,
-        "longitude": 36.4205
+        "latitude": 35.0647,
+        "longitude": 31.4546
     },
     {
         "carId": 44,
@@ -671,8 +671,8 @@
         "make": "Cadillac",
         "plantId": 5,
         "starred": false,
-        "latitude": 32.7948,
-        "longitude": 37.3617
+        "latitude": 35.0804,
+        "longitude": 31.0357
     },
     {
         "carId": 45,
@@ -686,8 +686,8 @@
         "make": "Jeep",
         "plantId": 7,
         "starred": false,
-        "latitude": 34.7154,
-        "longitude": 35.6743
+        "latitude": 35.0009,
+        "longitude": 31.8045
     },
     {
         "carId": 46,
@@ -701,8 +701,8 @@
         "make": "Ford",
         "plantId": 8,
         "starred": true,
-        "latitude": 33.6915,
-        "longitude": 37.5589
+        "latitude": 34.9053,
+        "longitude": 31.8222
     },
     {
         "carId": 47,
@@ -716,8 +716,8 @@
         "make": "Ford",
         "plantId": 11,
         "starred": false,
-        "latitude": 32.1298,
-        "longitude": 36.1561
+        "latitude": 35.057,
+        "longitude": 31.3459
     },
     {
         "carId": 48,
@@ -731,8 +731,8 @@
         "make": "Tesla",
         "plantId": 5,
         "starred": false,
-        "latitude": 33.3573,
-        "longitude": 38.1129
+        "latitude": 35.0252,
+        "longitude": 31.8922
     },
     {
         "carId": 49,
@@ -746,7 +746,7 @@
         "make": "Cadillac",
         "plantId": 14,
         "starred": false,
-        "latitude": 34.1452,
-        "longitude": 35.9817
+        "latitude": 35.0337,
+        "longitude": 31.6876
     }
 ]
