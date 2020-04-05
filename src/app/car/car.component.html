@@ -1,8 +1,12 @@
-<div>
+<div class="row" style="margin-bottom: 20px;">
     <a mat-raised-button class="text" style="margin-top: 30px" [color]="'success'" href="javascript:history.back()">Back</a>
 </div>
 
-<div class="row">
+<div class="home-row">
+    <div class="map">
+        <app-carmap></app-carmap>
+    </div>
+
     <div class="col">
         <h2>Details about the <em>{{this.car.model}} - {{this.car.make}}</em></h2>
 

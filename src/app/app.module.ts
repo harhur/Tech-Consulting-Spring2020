@@ -17,6 +17,7 @@ import { CarComponent } from './car/car.component';
 import {AnalyticsComponent} from './analytics/analytics.component';
 import { StarredComponent } from './starred/starred.component';
 import {MapComponent} from './map/map.component';
+import {CarMapComponent} from './carmap/carmap.component';
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     CarComponent,
     StarredComponent,
     AnalyticsComponent,
-    MapComponent
+    MapComponent,
+    CarMapComponent
   ],
   imports: [
     BrowserModule,

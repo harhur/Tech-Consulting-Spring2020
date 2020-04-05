@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import dummyData from '../../assets/dummyData.json';
 import {Car} from '../app.component';
+import {Router} from '@angular/router';
 
 declare var ol: any;
 
@@ -20,7 +21,6 @@ export class MapComponent implements OnInit {
     }
 
     ngOnInit() {
-
         // Base map of Israel
         const map = new ol.Map({
             layers: [

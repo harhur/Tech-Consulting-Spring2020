@@ -40,18 +40,9 @@ export class AppComponent {
   constructor(private router: Router) {
   }
 
-  /*
-  may be needed for future
-  setCenter() {
-    var view = this.map.getView();
-    view.setCenter(ol.proj.fromLonLat([35.04440, 31.25012]));
-    view.setZoom(8);
-  }
-  */
-
   ngOnInit() {
-    this.generateCoordinates();
-    console.log(this.latLong);
+    // this.generateCoordinates();
+    // console.log(this.latLong);
   }
 
   // Generate random coordinates for OpenStreetMaps from the pre-existing JSON data

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import dummyData from '../../assets/dummyData.json';
+import {MapComponent} from '../map/map.component';
 
 @Component({
   selector: 'app-car',
@@ -15,15 +16,15 @@ export class CarComponent implements OnInit {
     this.activeRoute.queryParams.subscribe(params => {
       this.id = +params['id'];
     });
-    this.getCar(this.id);
+    this.getCar();
   }
 
   ngOnInit() {
   }
 
-  getCar(id) {
+  getCar() {
     dummyData.forEach((car) => {
-      if (car.carId === id) {
+      if (car.carId === this.id) {
         this.car = car;
       }
     });
