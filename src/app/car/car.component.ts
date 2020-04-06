@@ -16,7 +16,7 @@ export class CarComponent implements OnInit {
     this.activeRoute.queryParams.subscribe(params => {
       this.id = +params['id'];
     });
-    this.getCar();
+    this.getCar(this.id);
   }
 
   ngOnInit() {
