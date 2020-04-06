@@ -16,7 +16,9 @@ import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/mater
 import { CarComponent } from './car/car.component';
 import {AnalyticsComponent} from './analytics/analytics.component';
 import { StarredComponent } from './starred/starred.component';
-import { AddCarComponent } from './add-car/add-car.component';
+import {MapComponent} from './map/map.component';
+import {CarMapComponent} from './carmap/carmap.component';
+import { AddCarComponent } from "./add-car/add-car.component";
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
@@ -36,6 +38,8 @@ const appRoutes: Routes = [
     CarComponent,
     StarredComponent,
     AnalyticsComponent,
+    MapComponent,
+    CarMapComponent,
     AddCarComponent
   ],
   imports: [

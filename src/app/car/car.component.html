@@ -1,24 +1,35 @@
-<div>
-    <a mat-raised-button class="text" style="margin-top: 30px" [color]="'success'" href="javascript:history.back()">Back</a>
+<div class="car-row">
+    <a mat-raised-button class="text" style="margin-top: 20px; margin-bottom: 15px" [color]="'success'" href="javascript:history.back()">Back</a>
+    <mat-icon class="loc" style="padding-left: 20px" aria-hidden="false" aria-label="recently added icon">location_on</mat-icon>
+    <h2 class="header">Location: ({{this.car?.latitude | number : '.2-2'}}°,
+        {{this.car?.longitude | number : '.2-2'}}°)</h2>
 </div>
 
-<div class="row">
-    <div class="col">
-        <h2>Details about the <em>{{this.car.model}} - {{this.car.make}}</em></h2>
+<div>
+    <div class="home-row">
+        <div class="map">
+            <app-carmap></app-carmap>
+        </div>
 
-        <ul class="panel">
-            <span class="panel-text">
-                <li>Car ID: {{this.car?.carId}}</li>
-                <li>Model: {{this.car?.model}} - {{this.car.year}}</li>
-                <li>Make: {{this.car?.make}}</li>
-                <li>Color: {{this.car?.color}}</li>
-                <li>Price: {{this.car?.price}}</li>
-                <li>Date added: {{this.car?.dateAdded}}</li>
-                <li>Last updated: {{this.car?.lastUpdated}}</li>
-                <li>Vehicle Identification: {{this.car?.vin}}</li>
-                <li>Plant ID: {{this.car?.plantId}}</li>
-                <li>Starred: {{this.car?.starred}}</li>
-            </span>
-        </ul>
+        <div class="analytics">
+            <h2 style="margin-top: 0px">Details about the <em>{{this.car.model}} - {{this.car.make}}</em></h2>
+
+            <ul class="panel">
+                <span class="panel-text">
+                    <li>Car ID: {{this.car?.carId}}</li>
+                    <li>Model: {{this.car?.model}} - {{this.car.year}}</li>
+                    <li>Make: {{this.car?.make}}</li>
+                    <li>Color: {{this.car?.color}}</li>
+                    <li>Price: {{this.car?.price}}</li>
+                    <li>Date added: {{this.car?.dateAdded}}</li>
+                    <li>Last updated: {{this.car?.lastUpdated}}</li>
+                    <li>Vehicle Identification: {{this.car?.vin}}</li>
+                    <li>Plant ID: {{this.car?.plantId}}</li>
+                    <li>Starred: {{this.car?.starred}}</li>
+                    <li>Location: ({{this.car?.latitude | number : '.2-2'}},
+                        {{this.car?.longitude | number : '.2-2'}})</li>
+                </span>
+            </ul>
+        </div>
     </div>
 </div>

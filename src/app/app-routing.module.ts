@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {CarComponent} from './car/car.component';
-import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 
 import {RecentlyAddedComponent} from './recently-added/recently-added.component';
 import {StarredComponent} from './starred/starred.component';

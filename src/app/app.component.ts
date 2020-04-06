@@ -33,45 +33,22 @@ export interface Car {
 export class AppComponent {
   title = 'sogo-services';
 
-  latitude: number = 18.5204;
-  longitude: number = 73.8567;
-
   map: any;
   latLong = new Array<Car>();
 
   constructor(private router: Router, private carService : CarsService) {
   }
 
-  /*
-  may be needed for future
-  setCenter() {
-    var view = this.map.getView();
-    view.setCenter(ol.proj.fromLonLat([35.04440, 31.25012]));
-    view.setZoom(8);
-  }
-  */
-
   ngOnInit() {
-    this.map = new ol.Map({
-      target: 'map',
-      layers: [
-        new ol.layer.Tile({
-          source: new ol.source.OSM()
-        })
-      ],
-      view: new ol.View({
-        center: ol.proj.fromLonLat([35.04440, 31.25012]),
-        zoom: 8
-      })
-    });
-    this.generateCoordinates();
+    // this.generateCoordinates();
+    // console.log(this.latLong);
   }
 
   // Generate random coordinates for OpenStreetMaps from the pre-existing JSON data
   generateCoordinates() {
     this.carService.getCars().subscribe(carArray => carArray.forEach(element => {
-      let latitude = (Math.random() * (31.7719 - 35.6012) + 35.6012).toFixed(4);
-      let longitude = (Math.random() * (35.2170 - 38.5432) + 38.5432).toFixed(4);
+      let latitude = (Math.random() * (34.9 - 35.09) + 35.090).toFixed(4);
+      let longitude = (Math.random() * (31 - 32.5) + 32.500).toFixed(4);
 
       let car = {
         carId: element.carId,

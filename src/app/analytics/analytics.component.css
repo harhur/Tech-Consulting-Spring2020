@@ -1,6 +1,10 @@
 @import '../app.component.css';
 
-tr:hover {background-color: #eeddff}
+tr {
+    height: 25px;
+}
+
+tr:hover {background-color: #78bcf5}
 
 th {
     text-align: left;
@@ -8,9 +12,18 @@ th {
 
 td {
     text-align: right;
+    text-transform: capitalize;
+    font-weight: lighter;
 }
 
-caption {
+h2 {
     background-color: #eeeeee;
-    font-weight: bold;
+    margin-top: 0px;
+    width: 80%;
+}
+
+table {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  border-collapse: collapse;
 }

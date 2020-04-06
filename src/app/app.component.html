@@ -1,6 +1,6 @@
 <mat-toolbar [color]="'success'">
   <mat-toolbar-row>
-    <a routerLink="/"><h1 style="color: white;"><img class="SogoLogo" src="../assets/Logo/sogo.PNG" align="center"> Sogo Services | ViLog</h1></a>
+    <a routerLink="/"><h1 style="color: white;"><img class="SogoLogo" src="../assets/favicon.PNG" align="center"> Sogo Services | ViLog</h1></a>
 
     <span class="toolbar-button"></span>
 
@@ -22,15 +22,17 @@
 </mat-toolbar>
 
 <div [hidden]="isNotHomepage()">
-  <div class="home-row" style="margin-top: 30px;">
+  <div class="home-row" style="margin-top: 20px;">
       <mat-icon class="loc" aria-hidden="false" aria-label="recently added icon">location_on</mat-icon>
       <h1 style="margin-left: 30px;">Location of All Vehicles</h1>
   </div>
 
   <div class="home-row">
-    <div id="map" class="map"></div>
+    <div class="map">
+      <app-map></app-map>
+    </div>
 
-    <div class="col analytics" style="width: 30%">
+    <div class="analytics">
       <app-analytics></app-analytics>
     </div>
   </div>
@@ -38,4 +40,3 @@
 
 <router-outlet></router-outlet>
 <!-- Routed components go here -->
-<!-- i.e, anything that ONLY is shown on the homepage -->

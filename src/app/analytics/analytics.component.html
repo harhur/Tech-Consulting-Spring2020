@@ -1,8 +1,11 @@
-
+<h2 align="center">
+  Analytics
+</h2>
 <table>
-  <caption>
-    ANALYTICS
-  </caption>
+  <tr>
+    <th> Total Cars </th>
+    <td> {{ totalCarCount() }} </td>
+  </tr>
   <tr>
     <th> Average Vehicle Price: </th>
     <td> ${{ priceAverage() }} </td>
@@ -22,5 +25,13 @@
   <tr>
     <th> Car Price Range: </th>
     <td> ${{ lowestCarPrice() }} - ${{ highestCarPrice() }} </td>
+  </tr>
+  <tr>
+    <th> Additional Cars Last 30 Days: </th>
+    <td> {{ carsAddedOverThirtyDays() }} </td>
+  </tr>
+  <tr>
+    <th> Earliest / Latest Models: </th>
+    <td> {{ carEarliestToLatest() }} </td>
   </tr>
 </table>
