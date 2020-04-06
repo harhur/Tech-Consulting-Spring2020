@@ -1,6 +1,6 @@
 <mat-toolbar [color]="'success'">
   <mat-toolbar-row>
-    <a href="#"><h1 class="nav-header"><img class="SogoLogo" src="../assets/favicon.PNG" align="center"> Sogo Services | ViLog</h1></a>
+    <a routerLink="/"><h1 class="nav-header"><img class="SogoLogo" src="../assets/favicon.PNG" align="center"> Sogo Services | ViLog</h1></a>
 
     <span class="toolbar-button"></span>
 
@@ -11,9 +11,13 @@
       <mat-icon aria-hidden="false" aria-label="recently added icon">new_releases</mat-icon>
       Recently Added</a>
 
-    <a mat-raised-button class="text" [color]="'successbutton'" style="margin-right: 10px; width: 140px" routerLink="/starred">
+    <a mat-raised-button class="text" [color]="'successbutton'" style="margin-right: 40px; width: 140px" routerLink="/starred">
       <mat-icon aria-hidden="false" aria-label="recently added icon">star_outline</mat-icon>
       Starred</a>
+
+    <a mat-raised-button class="text" [color]="'successbutton'" style="margin-right: 10px; width: 140px" routerLink="/add-car">
+      <mat-icon aria-hidden="false" aria-label="recently added icon">add_circle_outline</mat-icon>
+      Add Vehicle</a>
   </mat-toolbar-row>
 </mat-toolbar>
 

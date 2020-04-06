@@ -1,0 +1,64 @@
+<div>
+    <h1>Add New Vehicle</h1>
+</div>
+<div class="total">
+    <div class="sideOne">
+
+        <h4 style="margin-bottom: 0px;">Color:</h4>
+        <mat-form-field appearance="fill" color="primary">
+            <input matInput type="text" id="color" placeholder="e.g. Blue">
+        </mat-form-field>
+
+        <h4 style="margin-bottom: 0px;">Price:</h4>
+        <mat-form-field appearance="fill" color="primary">
+            <input matInput type="text" id="price" placeholder="e.g. 18000">
+        </mat-form-field>
+
+        <h4 style="margin-bottom: 0px;">VIN:</h4>
+        <mat-form-field appearance="fill" color="primary">
+            <input matInput type="text" id="vin" placeholder="e.g. 8001">
+        </mat-form-field>
+
+        <h4 style="margin-bottom: 0px;">Year:</h4>
+        <mat-form-field appearance="fill" color="primary">
+            <input matInput type="text" id="year" placeholder="e.g. 2019">
+        </mat-form-field>
+
+        <h4 style="margin-bottom: 0px;">Model:</h4>
+        <mat-form-field appearance="fill" color="primary">
+            <input matInput type="text" id="model" placeholder="e.g. Tesla">
+        </mat-form-field>
+    </div>
+
+    <div class="sideTwo">
+
+        <h4 style="margin-bottom: 0px;">Make:</h4>
+        <mat-form-field appearance="fill" color="primary">
+            <input matInput type="text" id="make" placeholder="e.g. Model Z">
+        </mat-form-field>
+
+        <h4 style="margin-bottom: 0px;">Plant ID:</h4>
+        <mat-form-field appearance="fill" color="primary">
+            <input matInput type="text" id="plantId" placeholder="e.g. 2">
+        </mat-form-field>
+
+        <h4 style="margin-bottom: 0px;">Starred:</h4>
+        <mat-checkbox type="checkbox" id="starred" [(ngModel)]="starred"></mat-checkbox>
+
+        <h4 style="margin-bottom: 0px;">Latitude:</h4>
+        <mat-form-field appearance="fill" color="primary">
+            <input matInput type="text" id="latitude" placeholder="e.g. 34.97">
+        </mat-form-field>
+
+        <h4 style="margin-bottom: 0px;">Longitude:</h4>
+        <mat-form-field appearance="fill" color="primary">
+            <input matInput type="text" id="longitude" placeholder="e.g. 31.31">
+        </mat-form-field>
+    </div>
+
+</div>
+
+<div class="bottom">
+    <button type="button" id="submitButton" (click)="addCar()">Create Vehicle</button><br>
+    <p class="submit" *ngIf="submitMessage !== ''">{{ submitMessage }}</p>
+</div>

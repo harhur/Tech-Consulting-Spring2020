@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import dummyData from '../../assets/dummyData.json';
 import {Car} from '../app.component';
 import {MatTableDataSource} from '@angular/material';
 import {Router} from '@angular/router';
-
+import { CarsService } from '../cars.service';
 
 @Component({
   selector: 'app-view-all',
@@ -12,14 +11,12 @@ import {Router} from '@angular/router';
 })
 
 export class ViewAllComponent implements OnInit {
-  jsonString: any;
   carArray: Car[];
   displayedColumns: string[] = ['carId', 'model', 'dateAdded'];
   dataSource: any;
 
-  constructor(private router: Router) {
-    this.jsonString = JSON.stringify(dummyData);
-    this.carArray = JSON.parse(this.jsonString);
+  constructor(private router: Router, private carService: CarsService) {
+    this.carService.getCars().subscribe(carArray => this.carArray = carArray);
 
     this.carArray.sort((a, b) => a.carId - b.carId);
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import dummyData from '../../assets/dummyData.json';
 import {Car} from '../app.component';
+import { CarsService } from "../cars.service";
 
 declare var ol: any;
 
@@ -12,11 +12,9 @@ declare var ol: any;
 
 export class MapComponent implements OnInit {
     carArray: Car[];
-    jsonString: any;
 
-    constructor() {
-        this.jsonString = JSON.stringify(dummyData);
-        this.carArray = JSON.parse(this.jsonString);
+    constructor(private carService: CarsService) {
+        this.carService.getCars().subscribe(carArray => this.carArray = carArray);
     }
 
     ngOnInit() {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import dummyData from '../../assets/dummyData.json';
 import {Car} from '../app.component';
 import {ActivatedRoute} from '@angular/router';
+import { CarsService } from '../cars.service';
 
 declare var ol: any;
 
@@ -12,14 +12,11 @@ declare var ol: any;
 })
 
 export class CarMapComponent implements OnInit {
-    carArray: Car[];
-    jsonString: any;
     id: number;
     car: Car;
 
-    constructor(private activeRoute: ActivatedRoute) {
-        this.jsonString = JSON.stringify(dummyData);
-        this.carArray = JSON.parse(this.jsonString);
+    constructor(private activeRoute: ActivatedRoute, private carService: CarsService) {
+
         this.activeRoute.queryParams.subscribe(params => {
             this.id = +params['id'];
         });
@@ -54,10 +51,10 @@ export class CarMapComponent implements OnInit {
     }
 
     getCar() {
-        dummyData.forEach((car) => {
+        this.carService.getCars().subscribe(carArray => carArray.forEach((car) => {
             if (car.carId === this.id) {
                 this.car = car;
             }
-        });
+        }));
     }
 }

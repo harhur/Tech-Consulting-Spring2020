@@ -12,18 +12,21 @@ import {RouterModule, Routes} from '@angular/router';
 
 import { RecentlyAddedComponent } from './recently-added/recently-added.component';
 import { ViewAllComponent } from './view-all/view-all.component';
-import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {MatTableModule, MatFormFieldModule, MatInputModule, MatCheckboxModule} from '@angular/material';
 import { CarComponent } from './car/car.component';
 import {AnalyticsComponent} from './analytics/analytics.component';
 import { StarredComponent } from './starred/starred.component';
 import {MapComponent} from './map/map.component';
 import {CarMapComponent} from './carmap/carmap.component';
+import { AddCarComponent } from './add-car/add-car.component';
+import {FormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
   { path: 'view-all', component: ViewAllComponent },
   { path: 'car', component: CarComponent },
-  {path: 'starred', component: StarredComponent}
+  {path: 'starred', component: StarredComponent},
+  {path: 'add-car', component: AddCarComponent}
 ];
 
 @NgModule({
@@ -37,7 +40,8 @@ const appRoutes: Routes = [
     StarredComponent,
     AnalyticsComponent,
     MapComponent,
-    CarMapComponent
+    CarMapComponent,
+    AddCarComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,9 @@ const appRoutes: Routes = [
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
-    RouterModule.forRoot(appRoutes)
+    MatCheckboxModule,
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

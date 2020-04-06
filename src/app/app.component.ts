@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import dummyData from '../assets/dummyData.json';
 import {Router} from '@angular/router';
+import {CarsService} from './cars.service';
+
+declare var ol: any;
 
 export interface Car {
   carId: number;
@@ -21,7 +23,8 @@ export interface Car {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [CarsService]
 })
 
 // Attribution :
@@ -32,17 +35,15 @@ export class AppComponent {
   map: any;
   latLong = new Array<Car>();
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private carService : CarsService) {
   }
 
   ngOnInit() {
-    // this.generateCoordinates();
-    // console.log(this.latLong);
   }
 
   // Generate random coordinates for OpenStreetMaps from the pre-existing JSON data
   generateCoordinates() {
-    dummyData.forEach(element => {
+    this.carService.getCars().subscribe(carArray => carArray.forEach(element => {
       let latitude = (Math.random() * (34.9 - 35.09) + 35.090).toFixed(4);
       let longitude = (Math.random() * (31 - 32.500) + 32.500).toFixed(4);
 
@@ -63,7 +64,7 @@ export class AppComponent {
       }
 
       this.latLong.push(car);
-    });
+    }));
   }
 
   isNotHomepage() {

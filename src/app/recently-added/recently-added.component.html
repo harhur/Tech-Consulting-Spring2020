@@ -1,5 +1,5 @@
 <div>
-    <h1 style="margin-bottom: 30px">Recently Added Cars</h1>
+    <h1 style="margin-bottom: 30px">Recently Added Vehicles</h1>
 
     <h3 style="margin-bottom: 0px;">Filter</h3>
     <mat-form-field appearance="fill" color="primary">
@@ -9,7 +9,7 @@
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
         <ng-container matColumnDef="carId">
-            <th mat-header-cell *matHeaderCellDef > Car ID </th>
+            <th mat-header-cell *matHeaderCellDef > Vehicle ID </th>
             <td mat-cell *matCellDef="let element"> {{element.carId}} </td>
         </ng-container>
 
