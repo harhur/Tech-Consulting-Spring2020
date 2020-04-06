@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import dummyData from '../../assets/dummyData.json';
+//import dummyData from '../../assets/dummyData.json';
 import {Car} from '../app.component';
+import { CarsService } from "../cars.service";
+//import { AddCarComponent } from "../add-car/add-car.component"
 
 @Component({
     selector: 'app-analytics',
@@ -10,20 +12,8 @@ import {Car} from '../app.component';
 
 export class AnalyticsComponent implements OnInit {
     carArray: Car[];
-    numStarred: number;
-    mostCommonColor: string;
-    mostCommonMake: string;
-    lowestPrice: number;
-    highestPrice: number;
-
-    constructor() {
-        let jsonString = JSON.stringify(dummyData);
-        this.carArray = JSON.parse(jsonString);
-        this.numStarred=0;
-        this.mostCommonColor="";
-        this.mostCommonMake="";
-        this.lowestPrice=0;
-        this.highestPrice=0;
+    constructor(private carService : CarsService) {
+        this.carService.getCars().subscribe(carArray => this.carArray = carArray);
         this.numStarredCars();
         this.mostCommonCarColor();
         this.mostCommonCarMake();
@@ -31,27 +21,31 @@ export class AnalyticsComponent implements OnInit {
         this.highestCarPrice();
     }
 
-    ngOnInit() {}
+    ngOnInit() {
+    }
 
     priceAverage() {
       var total = 0;
       var len = 0;
-      dummyData.forEach((car) => {
+      this.carArray.forEach((car) => {
         total = car.price + total;
         len++;
       });
-      return total / len;
+      return (Math.floor((total / len) * 100)) / 100;
     }
 
     numStarredCars() {
+      var starred = 0;
         for (let car of this.carArray) {
             if (car.starred === true) {
-                this.numStarred += 1;
+                starred += 1;
             }
         }
+        return starred;
     }
 
     mostCommonCarColor() {
+      this.carService.getCars().subscribe(carArray => this.carArray = carArray);
       var carColorArr = [];
       var colorNumArr = [];
       for(let car of this.carArray) {
@@ -63,7 +57,7 @@ export class AnalyticsComponent implements OnInit {
           colorNumArr[carColorArr.indexOf(car.color)] = colorNumArr[carColorArr.indexOf(car.color)] + 1;
         }
       }
-      this.mostCommonColor = carColorArr[colorNumArr.indexOf(Math.max(...colorNumArr))];
+      return carColorArr[colorNumArr.indexOf(Math.max(...colorNumArr))];
     }
 
     mostCommonCarMake() {
@@ -78,7 +72,7 @@ export class AnalyticsComponent implements OnInit {
           makeNumArr[carMakeArr.indexOf(car.make)] = makeNumArr[carMakeArr.indexOf(car.make)] + 1;
         }
       }
-      this.mostCommonMake = carMakeArr[makeNumArr.indexOf(Math.max(...makeNumArr))];
+      return carMakeArr[makeNumArr.indexOf(Math.max(...makeNumArr))];
     }
 
     lowestCarPrice() {
@@ -88,7 +82,7 @@ export class AnalyticsComponent implements OnInit {
           minPrice = car.price;
         }
       }
-      this.lowestPrice = minPrice;
+      return minPrice;
     }
 
     highestCarPrice() {
@@ -98,6 +92,6 @@ export class AnalyticsComponent implements OnInit {
           maxPrice = car.price;
         }
       }
-      this.highestPrice = maxPrice;
+      return maxPrice;
     }
 }

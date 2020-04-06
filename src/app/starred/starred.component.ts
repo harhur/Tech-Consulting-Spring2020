@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import dummyData from '../../assets/dummyData.json';
+//import dummyData from '../../assets/dummyData.json';
 import {MatTableDataSource} from '@angular/material';
 import {Router} from '@angular/router';
+import { CarsService } from "../cars.service";
 
 @Component({
   selector: 'app-starred',
@@ -15,15 +16,15 @@ export class StarredComponent implements OnInit {
   displayedColumns: string[] = ['carId', 'model', 'dateAdded'];
   dataSource: any;
 
-  constructor(private router: Router) {
-    this.jsonString = JSON.stringify(dummyData);
-    this.starredArray = JSON.parse(this.jsonString);
+  constructor(private router: Router, private carService: CarsService) {
+    // this.jsonString = JSON.stringify(dummyData);
+    // this.starredArray = JSON.parse(this.jsonString);
 
-    this.starredArray = this.starredArray.filter(function(arr) {
-          return arr.starred;
-      });
+    this.carService.getCars().subscribe(carArray => this.starredArray = carArray.filter(function(carArray) {
+          return carArray.starred;
+      }))
 
-      this.dataSource = new MatTableDataSource(this.starredArray);
+    this.dataSource = new MatTableDataSource(this.starredArray);
 
   }
 

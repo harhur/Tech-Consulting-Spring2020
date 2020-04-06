@@ -1,0 +1,79 @@
+<h2> Enter Car Fields Below: </h2>
+<div class="total">
+  <div class="sideOne">
+    <label>Car Id:</label><br>
+    <input type="text" id="carId"><br><br>
+
+    <label>Date Added:</label><br>
+    <input type="text" id="dateAdded" placeholder="e.g. YYYY-MM-DD"><br><br>
+
+    <label>Color:</label><br>
+    <input type="text" id="color"><br><br>
+
+    <label>Price:</label><br>
+    <input type="text" id="price" placeholder="e.g. 53300"><br><br>
+
+    <label>VIN:</label><br>
+    <input type="text" id="vin" placeholder="500473911531"><br><br>
+
+    <label>Last Updated:</label><br>
+    <input type="text" id="lastUpdated" placeholder="YYYY-MM-DD HH:MM:SS"><br><br>
+
+    <label>Year:</label><br>
+    <input type="text" id="year" placeholder="YYYY"><br><br>
+  </div>
+
+  <div class="sideTwo">
+
+    <label>Model:</label><br>
+    <input type="text" id="model" placeholder="Mustang"><br><br>
+
+    <label>Make:</label><br>
+    <input type="text" id="make" placeholder="Ford"><br><br>
+
+    <label>Plant ID:</label><br>
+    <input type="text" id="plantId"><br><br>
+
+    <label>Starred:</label><br>
+    <input type="checkbox" id="starred"><br><br>
+
+    <label>Latitude:</label><br>
+    <input type="text" id="latitude" placeholder="32.4442"><br><br>
+
+    <label>Longitude:</label><br>
+    <input type="text" id="longitude" placeholder="35.2501"><br><br>
+  </div>
+
+</div>
+
+<div class="bottom">
+  <button type="button" id="submitButton" (click)="addCar()">Add Car!</button><br>
+
+    <h1 style="margin-bottom: 30px">All Available Cars</h1>
+
+    <h3 style="margin-bottom: 0px;">Filter</h3>
+    <mat-form-field appearance="fill" color="primary">
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex: Tesla">
+    </mat-form-field>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="carId">
+            <th mat-header-cell *matHeaderCellDef> Car ID </th>
+            <td mat-cell *matCellDef="let element"> {{element.carId}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="model">
+            <th mat-header-cell *matHeaderCellDef> Model Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.model}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="dateAdded">
+            <th mat-header-cell *matHeaderCellDef> Date Added </th>
+            <td mat-cell *matCellDef="let element"> {{element.dateAdded}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="getRecord(row)"></tr>
+    </table>
+</div>

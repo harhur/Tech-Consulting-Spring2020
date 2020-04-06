@@ -1,6 +1,6 @@
 <mat-toolbar [color]="'success'">
   <mat-toolbar-row>
-    <a href="#"><h1 style="color: white;"><img class="SogoLogo" src="../assets/Logo/sogo.PNG" align="center"> Sogo Services | ViLog</h1></a>
+    <a routerLink="/"><h1 style="color: white;"><img class="SogoLogo" src="../assets/Logo/sogo.PNG" align="center"> Sogo Services | ViLog</h1></a>
 
     <span class="toolbar-button"></span>
 
@@ -14,6 +14,10 @@
     <a mat-raised-button class="text" [color]="'successbutton'" style="margin-right: 10px; width: 140px" routerLink="/starred">
       <mat-icon aria-hidden="false" aria-label="recently added icon">star_outline</mat-icon>
       Starred</a>
+
+      <a mat-raised-button class="text" [color]="'successbutton'" style="margin-right: 10px; width: 140px" routerLink="/add-car">
+        <mat-icon aria-hidden="false" aria-label="recently added icon">add_car</mat-icon>
+        Add Car</a>
   </mat-toolbar-row>
 </mat-toolbar>
 

@@ -16,12 +16,14 @@ import {MatTableModule, MatFormFieldModule, MatInputModule} from '@angular/mater
 import { CarComponent } from './car/car.component';
 import {AnalyticsComponent} from './analytics/analytics.component';
 import { StarredComponent } from './starred/starred.component';
+import { AddCarComponent } from './add-car/add-car.component';
 
 const appRoutes: Routes = [
   { path: 'recently-added', component: RecentlyAddedComponent },
   { path: 'view-all', component: ViewAllComponent },
   { path: 'car', component: CarComponent },
-  {path: 'starred', component: StarredComponent}
+  {path: 'starred', component: StarredComponent},
+  {path: 'add-car', component: AddCarComponent}
 ];
 
 @NgModule({
@@ -33,7 +35,8 @@ const appRoutes: Routes = [
     ViewAllComponent,
     CarComponent,
     StarredComponent,
-    AnalyticsComponent
+    AnalyticsComponent,
+    AddCarComponent
   ],
   imports: [
     BrowserModule,
@@ -46,9 +49,10 @@ const appRoutes: Routes = [
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
