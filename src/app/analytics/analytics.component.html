@@ -4,42 +4,42 @@
 <table>
   <tr>
     <th> Total Vehicles </th>
-    <td> {{ carTotal }} </td>
+    <td> {{ totalCarCount() }} </td>
   </tr>
   <tr>
     <th> Starred Vehicles </th>
-    <td> {{ numStarred }} </td>
+    <td> {{ numStarredCars() }} </td>
   </tr>
   <tr>
     <th> Most Common Color </th>
-    <td> {{ mostCommonColor }} </td>
+    <td> {{ mostCommonCarColor() }} </td>
   </tr>
   <tr>
     <th> Most Common Model </th>
-    <td> {{ mostCommonModel }} </td>
+    <td> {{ mostCommonCarModel() }} </td>
   </tr>
   <tr>
     <th> Most Common Make </th>
-    <td> {{ mostCommonMake }} </td>
+    <td> {{ mostCommonCarMake() }} </td>
   </tr>
   <tr>
     <th> Vehicles Added Past 30 Days </th>
-    <td> {{ carsAddedThirtyDays }} </td>
+    <td> {{ carsAddedOverThirtyDays() }} </td>
   </tr>
   <tr>
     <th> Earliest / Latest Model Years </th>
-    <td> {{ earliestToLatest }} </td>
+    <td> {{ carEarliestToLatest() }} </td>
   </tr>
   <tr>
     <th> Lowest Price </th>
-    <td> $ {{ lowestPrice | number }} </td>
+    <td> $ {{ lowestCarPrice() | number }} </td>
   </tr>
   <tr>
     <th> Highest Price </th>
-    <td> $ {{ highestPrice | number }} </td>
+    <td> $ {{ highestCarPrice() | number }} </td>
   </tr>
   <tr>
     <th> Average Vehicle Price </th>
-    <td> $ {{ averagePrice | number }} </td>
+    <td> $ {{ priceAverage() | number }} </td>
   </tr>
 </table>

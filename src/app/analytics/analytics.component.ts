@@ -48,7 +48,7 @@ export class AnalyticsComponent implements OnInit {
             total = car.price + total;
             len++;
         });
-        this.averagePrice = (Math.floor((total / len) * 100)) / 100;
+        return (Math.floor((total / len) * 100)) / 100;
     }
 
     // Number of starred cars
@@ -59,7 +59,7 @@ export class AnalyticsComponent implements OnInit {
                 starred += 1;
             }
         }
-        this.numStarred = starred;
+        return starred;
     }
 
     // Total number of cars
@@ -68,7 +68,7 @@ export class AnalyticsComponent implements OnInit {
         for (const car of this.carArray) {
             carTotal += 1;
         }
-        this.carTotal = carTotal;
+        return carTotal;
     }
 
     carEarliestToLatest() {
@@ -84,7 +84,7 @@ export class AnalyticsComponent implements OnInit {
                 latestDate = parseInt(car.dateAdded);
             }
         }
-        this.earliestToLatest = earliestDate.toString() + ' ~ ' + latestDate.toString();
+        return earliestDate.toString() + ' ~ ' + latestDate.toString();
     }
 
     // Most common car color
@@ -100,7 +100,7 @@ export class AnalyticsComponent implements OnInit {
                 colorNumArr[carColorArr.indexOf(car.color)] = colorNumArr[carColorArr.indexOf(car.color)] + 1;
             }
         }
-        this.mostCommonColor = carColorArr[colorNumArr.indexOf(Math.max(...colorNumArr))];
+        return carColorArr[colorNumArr.indexOf(Math.max(...colorNumArr))];
     }
 
     mostCommonCarMake() {
@@ -114,7 +114,7 @@ export class AnalyticsComponent implements OnInit {
                 makeNumArr[carMakeArr.indexOf(car.make)] = makeNumArr[carMakeArr.indexOf(car.make)] + 1;
             }
         }
-        this.mostCommonMake = carMakeArr[makeNumArr.indexOf(Math.max(...makeNumArr))];
+        return carMakeArr[makeNumArr.indexOf(Math.max(...makeNumArr))];
     }
 
     mostCommonCarModel() {
@@ -129,7 +129,7 @@ export class AnalyticsComponent implements OnInit {
                 modelNumArr[carModelArr.indexOf(car.model)] = modelNumArr[carModelArr.indexOf(car.model)] + 1;
             }
         }
-        this.mostCommonModel = carModelArr[modelNumArr.indexOf(Math.max(...modelNumArr))];
+        return carModelArr[modelNumArr.indexOf(Math.max(...modelNumArr))];
     }
 
     lowestCarPrice() {
@@ -139,7 +139,7 @@ export class AnalyticsComponent implements OnInit {
                 minPrice = car.price;
             }
         }
-        this.lowestPrice = minPrice;
+        return minPrice;
     }
 
     highestCarPrice() {
@@ -149,7 +149,7 @@ export class AnalyticsComponent implements OnInit {
                 maxPrice = car.price;
             }
         }
-        this.highestPrice = maxPrice;
+        return maxPrice;
     }
 
     // Cars added over the past 30 days
@@ -183,6 +183,6 @@ export class AnalyticsComponent implements OnInit {
                 }
             }
         }
-        this.carsAddedThirtyDays = carsAddedThirtyDays;
+        return carsAddedThirtyDays;
     }
 }
